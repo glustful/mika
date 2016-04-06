@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/checkwork_date"
+            android:textColor="@android:color/white"/>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+        <Button
+            android:id="@+id/beginDateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="2014-02-04"
+            android:gravity="left|center_vertical"
+            android:textColor="@android:color/white"
+            android:background="@drawable/search_edit_bg"
+            />
+         <ImageView 
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/horizontal_line"
+            android:layout_gravity="center"/>
+         <Button 
+             android:id="@+id/endDateBtn"
+             android:layout_weight="1"
+             android:layout_width="wrap_content"
+             android:layout_height="35dp"
+             android:singleLine="true"
+             android:gravity="left|center_vertical"
+             android:textColor="@android:color/white"
+             android:background="@drawable/search_edit_bg"/>
+        </LinearLayout>
+        
+          <TextView 
+              android:id="@+id/nameTextView"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/write_familayname"
+            android:textColor="@android:color/white"/>
+        
+            <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/nameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:textColor="@android:color/white"
+            android:background="@drawable/search_edit_bg"
+            />
+            
+            <TextView 
+                android:id="@+id/orgTextView"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/write_orgname"
+            android:textColor="@android:color/white"/>
+        
+            <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/orgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:textColor="@android:color/white"
+            android:background="@drawable/search_edit_bg"
+            />
+    </LinearLayout>
+    
+    <include 
+        android:id="@+id/bottomView"
+        layout="@layout/normal_menudrawmenu_layout"
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

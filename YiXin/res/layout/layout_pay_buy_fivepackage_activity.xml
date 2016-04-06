@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nanlus="http://schemas.android.com/apk/res/com.miicaa.home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_pay_head_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+           >
+
+            
+
+
+
+            <com.miicaa.home.ui.pay.TableLayoutPackageView_
+                android:id="@+id/pay_package_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.miicaa.home.ui.pay.TableLayoutPackageView_>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="数量(个)：" 
+                    android:textColor="@color/payGray"/>
+
+                 <ImageButton
+                     android:clickable="false"
+                     android:id="@+id/buy_count_minus"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:src="@drawable/pay_minus" />
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/buy_count_edit"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pay_edit_bg"
+                    android:inputType="number"
+                    android:minWidth="50dp"
+                    android:singleLine="true" 
+                    android:maxLength="5"/>
+
+                <ImageButton
+                    android:clickable="false"
+                   
+                    android:id="@+id/buy_count_plus"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/transparent"
+                    android:src="@drawable/pay_plus" />
+            </LinearLayout>
+		<View 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/payLine"/>
+            
+ <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开通时长(天)："
+                    android:textColor="@color/payGray" />
+
+                <TextView
+                    android:id="@+id/buy_fivetimelength"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/payBlue" />
+            </LinearLayout>
+
+            <TextView
+                android:background="@color/appBackground"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/payPadding"
+                android:text="5人包的过期日期与企业当前使用的套餐过期日期一致"
+                android:textColor="@color/payGray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                   
+                   android:textStyle="bold"
+                    android:text="总价（元）" />
+
+                <TextView
+                    android:id="@+id/buy_money_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:textColor="@color/red"
+                   android:gravity="right"
+                    android:padding="@dimen/payPadding"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" 
+                >
+
+                <CheckBox
+                    android:id="@+id/buy_protocol_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/pay_checkbox_selector"
+                    android:drawablePadding="10dp"
+                    android:text="我已阅读并同意" />
+
+                <TextView
+                    android:id="@+id/buy_protocol_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:minWidth="50dp"
+                    android:singleLine="true"
+                    android:text="@string/payProtocol" />
+            </LinearLayout>
+             <TextView
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:singleLine="true"
+                    android:text="套餐购买后，立即生效" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buy_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pay_recharge_color_selector"
+        android:text="立即购买" />
+
+</LinearLayout>

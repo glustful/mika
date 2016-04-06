@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    android:orientation="vertical" >
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_head_bg"
+        android:gravity="top" >
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+         
+            <Button
+           
+                android:id="@+id/arrange_finish_id_back"
+                style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000" />
+            
+        </RelativeLayout>
+
+        <TextView 
+            android:id="@+id/arrange_finish_id_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="办结并点评"
+            android:textSize="@dimen/plantext_size"
+            android:textColor="#FFFFFF"/>
+        
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alittle_white"
+                android:layout_centerInParent="true"
+             />
+
+            <Button
+                android:id="@+id/arrange_finish_id_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/alittle_white"
+                android:textSize="15sp"
+                android:background="#00000000" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <ListView
+            android:id="@+id/arrange_finish_id_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

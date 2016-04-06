@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        
+        layout="@layout/layout_pay_head_view" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/appBackground"
+        >
+  
+       <TextView 
+           android:id="@+id/tip"
+           android:padding="@dimen/payPadding"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="正在使用的产品详细信息"/>
+       
+       <ListView 
+          
+           
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:cacheColorHint="#ffffff"
+           android:id="@+id/package_list"
+           android:dividerHeight="2dp">
+           
+           </ListView>
+       </LinearLayout>
+      
+</LinearLayout>

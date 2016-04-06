@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/an_top_bg">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="61dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/repeat_rule_activity_back_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/back_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="61dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/repeat_rule_activity_save_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="保存"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/save_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="重复规则"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/repeat_rule_activity_title"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/item_text_normal_color"
+                android:text="重复摘要：" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/repeat_rule_activity_no_repeat_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@drawable/person_item_text_color"
+                    android:textSize="14sp"
+                    android:text="不重复"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/sex_icon_selector"
+                    android:background="@drawable/round_top_half_selector" />
+
+                <Button
+                    android:id="@+id/repeat_rule_activity_day_repeat_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@drawable/person_item_text_color"
+                    android:textSize="14sp"
+                    android:text="按天重复"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/sex_icon_selector"
+                    android:background="@drawable/round_center_selector" />
+
+                <Button
+                    android:id="@+id/repeat_rule_activity_week_repeat_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@drawable/person_item_text_color"
+                    android:textSize="14sp"
+                    android:text="按周重复"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/sex_icon_selector"
+                    android:background="@drawable/round_center_selector" />
+
+                <Button
+                    android:id="@+id/repeat_rule_activity_month_repeat_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="@drawable/person_item_text_color"
+                    android:textSize="14sp"
+                    android:text="按月重复"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/sex_icon_selector"
+                    android:background="@drawable/round_center_selector" />
+
+                <Button
+                    android:id="@+id/repeat_rule_activity_year_repeat_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:textColor="@drawable/person_item_text_color"
+                    android:textSize="14sp"
+                    android:text="按年重复"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/sex_icon_selector"
+                    android:background="@drawable/round_bottom_half_selector" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/repeat_rule_activity_content_layout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

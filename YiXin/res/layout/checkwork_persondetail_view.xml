@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/signTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一一一我阿斯顿阿斯顿一一"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/sign_in"
+        android:drawablePadding="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"/>
+    <Button
+        android:id="@+id/signWhereTextBtn"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一一一我阿斯顿阿斯顿一一"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"/>
+    <com.miicaa.home.view.AttachmentView_
+        android:id="@+id/attachementView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button 
+        android:id="@+id/beizhuBtn"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/sigin_remind_color"
+        android:text="这是一个备注备注备注"/>
+</LinearLayout>

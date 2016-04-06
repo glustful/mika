@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/topScrollView"
+    android:layout_above="@+id/bottmLayout"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="事项来源"
+            android:textSize="@dimen/plantext_size"
+            android:textColor="#FFFFFF"/>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <com.miicaa.home.ui.menu.Screenview_ 
+                    android:id="@+id/screen_to_arrange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+                <com.miicaa.home.ui.menu.Screenview_ 
+                    android:id="@+id/screen_to_approval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                >
+                <com.miicaa.home.ui.menu.Screenview_ 
+                    android:id="@+id/screen_to_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:src="@color/bottom_line_color"/>
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="vertical" >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="事项类型"
+            android:textSize="@dimen/plantext_size"
+            android:textColor="#FFFFFF"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务:"
+                    android:textColor="@color/alittle_white"
+                    android:textSize="@dimen/screen_text_size"
+                    android:layout_centerInParent="true"/>
+                  </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                > 
+                 <com.miicaa.home.ui.menu.Screenview_ 
+                    android:id="@+id/screen_to_public"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    />
+               
+            </RelativeLayout>
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                >
+                  <com.miicaa.home.ui.menu.Screenview_ 
+                    android:id="@+id/screen_to_secret"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+           
+            </RelativeLayout>
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="审批:"
+                    android:textColor="@color/alittle_white"
+                    android:textSize="@dimen/screen_text_size"
+                    android:layout_centerInParent="true"/>
+                  </RelativeLayout>
+                   <com.miicaa.home.ui.org.LableGroup
+                    android:id="@+id/approval_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    
+                    />
+
+            <!-- <GridView
+                android:id="@+id/approval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" >
+</GridView> -->
+                
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工作报告:"
+                    android:textColor="@color/alittle_white"
+                    android:textSize="@dimen/screen_text_size"
+                    android:layout_centerInParent="true"/>
+                  </RelativeLayout>
+                   <com.miicaa.home.ui.menu.ScrrenViewGroup
+                    android:id="@+id/report_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    
+                    />
+
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:src="@color/bottom_line_color"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发起人"
+            android:textColor="@color/alittle_white"
+            android:textSize="@dimen/screen_text_size"
+            />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView 
+                android:id="@+id/whoBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_edit_bg" />
+            <TextView 
+                android:id="@+id/screen_edit_to_who"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/whoBg"
+                android:layout_alignTop="@+id/whoBg"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"/>
+        </RelativeLayout>
+     
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="办理人"
+            android:textColor="@color/alittle_white"
+            android:textSize="@dimen/screen_text_size"
+            />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView 
+                android:id="@+id/editorBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_edit_bg" />
+            <TextView 
+                android:id="@+id/screenEditeditor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_alignTop="@+id/editorBg"
+                android:layout_alignBottom="@+id/editorBg"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:background="@color/transparent"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建时间"
+            android:textColor="@color/alittle_white"
+            android:textSize="@dimen/screen_text_size"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <RelativeLayout 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            
+            >
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/search_edit_bg" />
+            <TextView 
+                android:id="@+id/screen_edit_to_begintime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="#00000000"/>
+        </RelativeLayout>
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/horizontal_line"
+            android:layout_gravity="center"/>
+         <RelativeLayout 
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            
+            >
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/search_edit_bg" />
+            <TextView 
+                android:id="@+id/screen_edit_to_endtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                 android:textColor="@color/white"
+                 android:gravity="center"
+                android:textSize="16sp"
+                android:background="#00000000"/>
+        </RelativeLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+    <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:src="@color/bottom_line_color"/>
+  
+
+</LinearLayout>
+</ScrollView>
+  <RelativeLayout 
+        android:id="@+id/bottmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/main_bottom"
+        android:layout_alignParentBottom="true"
+        >
+    <Button
+        android:id="@+id/clearType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:text="清空"
+        android:textSize="15sp"
+        />
+      <Button 
+          android:id="@+id/complete"
+          android:layout_width="60dp"
+          android:layout_height="25dp"
+          android:background="@drawable/screen_complete"
+          style = "?android:attr/buttonStyleSmall"
+          android:layout_alignParentRight="true"
+          android:textColor="@android:color/white"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="3sp"
+          android:text="完成"/>
+  </RelativeLayout>
+</RelativeLayout>

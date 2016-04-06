@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pay_way"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appBackground"
+    android:orientation="horizontal" >
+<View 
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:background="@color/payLine"
+	    android:visibility="gone"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="成长型1"
+        
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black" 
+        android:textStyle="bold"/>
+	<View 
+	    android:layout_width="1dp"
+	    android:layout_height="fill_parent"
+	    android:background="@color/payLine"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+             android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                 >
+
+                <TextView
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:text="人数："
+                    
+                    android:textColor="@color/payGray" />
+
+                <TextView
+                    android:id="@+id/peopleCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text=""
+                    
+                    android:textColor="@color/payGray" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/peopleRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:drawablePadding="8dp"
+                android:layout_marginTop="5dp"
+                android:button="@drawable/pay_checkbox_circle_selector"
+                
+                android:textColor="@color/paypRed"/>
+        </LinearLayout>
+         <LinearLayout
+             android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+             android:layout_weight="1"
+             android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:text="存储空间："
+                    
+                    android:textColor="@color/payGray" />
+
+                <TextView
+                    android:id="@+id/store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text=""
+                    
+                    android:textColor="@color/payGray" />
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/storeRB"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:drawablePadding="8dp"
+                android:button="@drawable/pay_checkbox_circle_selector"
+                
+                android:textColor="@color/paypRed"/>
+        </LinearLayout>
+    </LinearLayout>
+<View 
+    android:visibility="gone"
+	    android:layout_width="2dp"
+	    android:layout_height="fill_parent"
+	    android:background="@color/payLine"/>
+</LinearLayout>

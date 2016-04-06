@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/moreRowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/alittle_white"
+        android:orientation="horizontal">
+   <!--   <com.miicaa.detail.MyGridView 
+        android:id="@+id/moreRowGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:layout_weight="1"/>
+        -->
+        <com.miicaa.home.ui.home.ScreenViewGroup 
+            android:id="@+id/moreRowView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+    <ImageButton 
+        android:id="@+id/moreRowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/up_jiao"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        />
+    </RelativeLayout>
+    </LinearLayout>

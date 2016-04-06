@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/an_top_bg">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="61dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/assessment_new_form_activity_back_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/back_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/assessment_new_form_activity_title_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="选择审批类型"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="61dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/assessment_new_form_activity_save_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="保存"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/save_selector" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/assessment_new_form_activity_edit"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="#00B28C"
+                android:background="@drawable/an_round_all_normal"
+                android:minLines="3"
+                android:textSize="13sp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:autoText="true" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent">
+
+                    <Button
+                        android:id="@+id/assessment_new_form_activity_assessment_person_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="@drawable/person_item_text_color"
+                        android:textSize="14sp"
+                        android:text="审批人"
+                        android:gravity="left|center_vertical"
+                        android:drawableRight="@drawable/right_next_selector"
+                        android:background="@drawable/round_top_half_selector" />
+
+                    <TextView
+                        android:id="@+id/assessment_new_form_activity_assessment_person_textview"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:gravity="left|center"
+                        android:text="xxx" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <Button
+                        android:id="@+id/assessment_new_form_activity_copy_person_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/person_item_text_color"
+                        android:textSize="14sp"
+                        android:text="抄送人"
+                        android:gravity="left|center_vertical"
+                        android:drawableRight="@drawable/right_next_selector"
+                        android:background="@drawable/round_bottom_half_selector" />
+
+                    <TextView
+                        android:id="@+id/assessment_new_form_activity_copy_person_textview"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:minHeight="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:gravity="left|center"
+                        android:text="xxx" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.miicaa.common.base.PictureLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/main_app_id_item_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

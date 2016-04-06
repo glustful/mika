@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp">
+
+    <TextView
+        android:id="@+id/dtail_progress_content_textcontent"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333300"
+        android:text="内容"/>
+    <TextView
+        android:id="@+id/dtail_progress_finish"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0709"
+        android:text="已完成所负责的工作"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/detail_progress_content_attachment_layout"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+                <RelativeLayout
+                    android:id="@+id/detail_progress_content_photo_layout"
+                    android:layout_width="54dp"
+                    android:layout_height="63dp"
+                    android:layout_marginLeft="8dp">
+                    <ImageView
+                        android:id="@+id/detail_progress_content_attachment_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/an_arrange_photo_icon"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:id="@+id/detail_progress_content_photo_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:text="0张"
+                        android:background="@drawable/bar1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/detail_progress_content_file_layout"
+                    android:layout_width="54dp"
+                    android:layout_height="63dp"
+                    android:layout_marginLeft="8dp">
+                    <ImageView
+                        android:id="@+id/detail_progress_content_attachment_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/an_arrange_file_icon"
+                        android:scaleType="fitCenter"/>
+                    <TextView
+                        android:id="@+id/detail_progress_content_file_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:text="0个"
+                        android:background="@drawable/bar1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/detail_progress_content_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="2013-12-19 10:35"
+                    android:textSize="12sp"
+                    android:textColor="#999999"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+

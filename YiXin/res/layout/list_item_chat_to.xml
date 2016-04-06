@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_vertical"
+    android:paddingLeft="@dimen/spacing_horizontal_small"
+    android:paddingRight="@dimen/spacing_horizontal_small"
+    android:paddingTop="@dimen/spacing_vertical" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_item_time"
+        android:text="晚上20:53" />
+
+    <com.miicaa.base.RoundImage.CircularImage
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/head_size_small"
+        android:layout_height="@dimen/head_size_small"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="6dp"
+        android:scaleType="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="80dp"
+        android:layout_toLeftOf="@+id/iv_icon"
+        android:background="@drawable/chat_to_bg"
+        android:minHeight="@dimen/icon_size_normal"
+        android:minWidth="50dp"
+        android:text="tv_content"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_content"
+        android:layout_alignTop="@+id/tv_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginRight="-80dp"
+        android:layout_toLeftOf="@+id/tv_content"
+        android:paddingRight="@dimen/spacing_horizontal_small" >
+
+        <!-- <ImageButton
+            android:id="@+id/statusError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/msg_state_fail_resend"
+            android:visibility="gone" /> -->
+
+        <ProgressBar 
+            android:id="@+id/statusSending"
+            android:layout_width="@dimen/spacing_horizontal"
+            android:layout_height="@dimen/spacing_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        
+        <ImageView 
+            android:id="@+id/statusError"
+            android:layout_width="@dimen/spacing_horizontal"
+            android:layout_height="@dimen/spacing_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/signup_error"/>
+        
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="tvStatus" />
+    </RelativeLayout>
+
+</RelativeLayout>

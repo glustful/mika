@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/an_top_bg">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="61dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true">
+            <Button
+                android:id="@+id/org_person_list_activity_back_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/back_selector"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="61dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true">
+            <Button
+                android:id="@+id/org_person_list_activity_submit_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="保存"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/save_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/org_person_list_activity_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="选择人员"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/org_person_list_activity_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/org_person_list_activity_trends_content"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"/>
+            <LinearLayout
+                android:id="@+id/org_person_list_activity_root_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="horizontal">
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

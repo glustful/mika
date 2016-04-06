@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_head_bg"
+        android:gravity="top" >
+         
+            <Button
+           
+                android:id="@+id/chat_base_id_back"
+                style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_nobgd" />
+            
+
+        <TextView 
+            android:id="@+id/chat_base_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="聊天详情"
+            android:textSize="@dimen/framText"
+            android:textColor="#FFFFFF"/>
+        
+           
+
+        
+    </RelativeLayout>
+    <ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.yxst.epic.yixin.view.WrapContentHeightGridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white"
+            android:cacheColorHint="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingBottom="@dimen/spacing_vertical"
+            android:paddingTop="@dimen/spacing_vertical"
+            android:scrollbars="none" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/divider_bar_h"
+            android:background="@android:color/white"
+            android:shrinkColumns="1"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:id="@+id/trQun"
+                android:background="@drawable/list_selector"
+                android:clickable="true" >
+
+                <TextView
+                    style="@style/contact_detail_table_key"
+                    android:text="群聊名称" />
+
+                <TextView
+                    android:id="@+id/tvQun"
+                    style="@style/contact_detail_table_value"
+                    android:gravity="right"
+                    android:text="我的群" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnQuitQun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_horizontal"
+            android:layout_marginRight="@dimen/spacing_horizontal"
+            android:layout_marginTop="@dimen/divider_bar_h"
+            android:background="@drawable/btn_red"
+            android:text="删除并退出"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+

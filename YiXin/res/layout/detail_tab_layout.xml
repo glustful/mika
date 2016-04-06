@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+           android:background="@color/tabSelectcolor">
+   
+    <LinearLayout
+        android:id="@+id/matter_detail_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:id="@+id/doProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button 
+                android:id="@+id/progressChar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="进展(0)"
+                android:textSize="@dimen/tabText"
+                android:textColor="@color/matter_tab_select_color"
+                android:layout_marginBottom="4dp"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"/>
+            <ImageView 
+                android:id="@+id/bottom_flag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/matter_tag_top_bg"
+               
+                />
+            
+        </LinearLayout>
+        
+      
+        <LinearLayout 
+            android:id="@+id/doDiscuss"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <Button 
+                android:id="@+id/discussChar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="评论(0)"
+               android:textColor="@color/matter_tab_select_color"
+                 android:textSize="@dimen/tabText"
+                 android:layout_marginBottom="4dp"
+                 android:background="@color/transparent"
+                 android:gravity="center_vertical"/>
+            <ImageView 
+                android:id="@+id/bottom_flag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/matter_tag_top_bg"
+
+                />
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/doTrends"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <Button 
+                android:id="@+id/trendsChar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="动态(0)"
+               android:textColor="@color/matter_tab_select_color"
+                 android:textSize="@dimen/tabText"
+                 android:layout_marginBottom="4dp" 
+                 android:background="@color/transparent"
+                 android:gravity="center_vertical"/>
+            <ImageView 
+                android:id="@+id/bottom_flag3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/matter_tag_top_bg"
+                />
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+      </RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#E6E6E6"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+      
+            android:background="@drawable/an_head_bg">
+        <TextView 
+           android:id="@+id/matter_builder_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            >
+        <Button
+                    android:id="@+id/matter_builder_id_back"
+                   style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+            android:id="@+id/matter_builder_id_arrange"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:minHeight="42dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                android:paddingLeft="@dimen/paddingleft"
+                    android:id="@+id/matter_builder_id_official"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:text="公事"
+                    android:gravity="left|center_vertical"
+                    android:background="@drawable/white_color_selector"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:minHeight="46dp"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                	android:paddingLeft="@dimen/paddingleft"
+                    android:id="@+id/matter_builder_id_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:text="私事"
+                    android:gravity="left|center_vertical"
+                    android:background="@drawable/white_color_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView 
+        android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+    <LinearLayout
+            android:id="@+id/matter_builder_id_layout"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

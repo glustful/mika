@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+       <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+      
+            android:background="@drawable/an_head_bg">
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <Button 
+                android:id="@+id/accessory_list_activity_back_button"
+                 style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"/>
+        </RelativeLayout>
+        <TextView 
+           android:id="@+id/detection_matter_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看所有附件"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        
+        
+    </RelativeLayout>
+    
+
+    <ScrollView
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/accessory_list_activity_content_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

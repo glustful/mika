@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_pay_head_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" >
+
+                    <com.miicaa.base.RoundImage.CircularImage
+                        android:id="@+id/headimg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/an_user_head_large" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="0dp"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                         >
+
+                        <TextView
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="张三"
+                            android:textColor="#333333"
+                            android:textSize="@dimen/nameTextsize" />
+                        <LinearLayout 
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@id/name"
+                            android:layout_alignLeft="@id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                             <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布部门："
+                        android:textSize="15dp"
+                        android:textColor="@color/payGray"/>
+                     <TextView 
+                         android:id="@+id/unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="@color/payGray"/>
+                      <TextView 
+                         android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公示期："
+                        android:textColor="@color/payGray"/>
+                         <TextView 
+                             android:textSize="15dp"
+                             android:id="@+id/keepDays"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/payGray"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="3dp"
+                    android:text="公示期"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/keepdays_border"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+           
+            <TextView 
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+             <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/attachment_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <RelativeLayout
+                        android:id="@+id/photo_layout"
+                        android:layout_width="50dp"
+                        android:layout_height="63dp"
+                        android:layout_marginLeft="8dp"
+                        android:paddingBottom="5dp">
+                    <ImageView
+                            android:id="@+id/picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/an_arrange_photo_icon"
+                            android:scaleType="fitCenter"/>
+                    <TextView
+                            android:id="@+id/photo_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"
+                            android:gravity="center"
+                            android:layout_alignParentBottom="true"
+                            android:text="0张"
+                            android:background="@drawable/bar1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                        android:id="@+id/file_layout"
+                        android:layout_width="50dp"
+                        android:layout_height="63dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginLeft="8dp">
+                    <ImageView
+                            android:id="@+id/file"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/an_arrange_file_icon"
+                            android:scaleType="fitCenter"/>
+                    <TextView
+                            android:id="@+id/file_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="16dp"
+                            android:gravity="center"
+                            android:layout_alignParentBottom="true"
+                            android:text="0张"
+                            android:background="@drawable/bar1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                   
+                      <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布时间："
+                        android:textColor="@color/payGray"/>
+                       <TextView 
+                           android:id="@+id/pubtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/payGray"/>
+                       
+                </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

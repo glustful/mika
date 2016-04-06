@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxst.epic.yixin.view.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wholeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/alittle_white" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_head_bg"
+        android:text="对进展的评论"
+        android:textSize="@dimen/framText"
+        android:textColor="@color/alittle_white"
+        android:gravity="center"/>
+     <RelativeLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <Button 
+                     android:id="@+id/writeCancle"
+                     style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                     android:background="@color/transparent"/>
+    
+            </RelativeLayout>
+            </RelativeLayout>
+ 
+
+
+      <com.handmark.pulltorefresh.library.PullToRefreshListView 
+          android:id="@+id/discussList"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:divider="@null"
+          android:layout_weight="1"
+          />
+ 
+      <ScrollView 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+      <com.miicaa.detail.DiscussFootView_ 
+          android:id="@+id/discussFoot"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          
+          />
+      </ScrollView>
+     
+
+</com.yxst.epic.yixin.view.ResizeLayout>

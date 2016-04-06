@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="2dp"
+            android:paddingTop="5dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+        <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageRemindIcon"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/an_home_flag"
+                android:scaleType="fitCenter"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:id="@+id/textRemindText"
+                style="@style/NotificationTitle"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:id="@+id/layoutRemindToolbar"
+            android:layout_weight="1">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="延时："
+                android:id="@+id/textView2"
+                style="@style/NotificationText"
+                android:gravity="center|center_vertical"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10分钟"
+                android:id="@+id/buttonRemind10M"
+                android:textSize="12dp"
+                android:background="#6693a6"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center|center_vertical"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1小时"
+                android:id="@+id/buttonRemind1H"
+                android:textSize="12dp"
+                android:background="#6693a6"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center|center_vertical"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="明天"
+                android:id="@+id/buttonRemindTomorrow"
+                android:textSize="12dp"
+                android:background="#6693a6"
+                android:layout_marginLeft="9dp"
+                android:layout_weight="1"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:gravity="center|center_vertical"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="|"
+                android:id="@+id/textView3"
+                android:layout_marginLeft="5dp"
+                style="@style/NotificationText"
+                android:gravity="center|center_vertical"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="不再提醒"
+                android:id="@+id/buttonLater"
+                android:textSize="12dp"
+                android:background="#6693a6"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center|center_vertical"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+      >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/register_s_logo"
+            android:scaleType="fitCenter"/>
+        <EditText 
+            android:id="@+id/regristerEdit"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/register_s_edit"
+            android:paddingLeft="5dp"
+            android:hint="@string/email_text"
+            />
+        <Button 
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/register_s_button"
+            android:text="@string/register_text"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/regSuccessLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/register_s_success"/>
+        <TextView 
+            android:id="@+id/successTextView"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+     <ProgressBar  
+        android:id="@+id/progressBar"  
+        style="?android:attr/progressBarStyleLarge"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:max="100"  
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>  
+     
+
+</RelativeLayout>

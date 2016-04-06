@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <declare-styleable name="ScrollPicker">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+        <attr name="lineColor" format="color" />
+        <attr name="maskHight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="TabIndicator">
+        <attr name="tbTitle" format="reference|string" />
+        <attr name="tbIcon" format="reference" />
+    </declare-styleable>
+    
+    <declare-styleable name="TextViewPartColor">
+        <attr name="partTextColor" format="reference|color"></attr>
+        <attr name="colorStart" format="integer"></attr>
+        <attr name="colorEnd" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="LabelTextView">
+        <attr name="label" format="reference|string"></attr>
+        <attr name="text" format="reference|string"></attr>
+        <attr name="hint" format="reference|string"></attr>
+       	<attr name="gravity">
+       	    <enum name="RIGHT" value="5"></enum>
+       	    <enum name="LEFT" value="3"></enum>
+       	    <enum name="TOP" value="48"></enum>
+       	    <enum name="BOTTOM" value="80"></enum>
+       	</attr>
+       	<attr name="enable" format="boolean"></attr>
+       	<attr name="drawableRight" format="reference"></attr>
+    </declare-styleable>
+<!-- LockPatternView class attributes -->
+    <declare-styleable name="LockPatternView">
+
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        <attr name="line" format="color" />
+        <attr name="btnNormal" format="reference" />
+        <attr name="btnTouched" format="reference" />
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleGreen" format="reference" />
+        <attr name="circleRed" format="reference" />
+        <attr name="arrowGreenUp" format="reference" />
+        <attr name="arrowRedUp" format="reference" />
+    </declare-styleable>
+   
+</resources>

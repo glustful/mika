@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pay_rgway"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appBackground"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/pay_id_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_icon_selector"
+        android:button="@null"
+       
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/pay_checkbox_circle_selector"
+        android:drawableLeft="@drawable/account_icon"
+        android:padding="@dimen/payPadding"
+        android:text="账户余额" />
+
+    <RadioButton
+        android:id="@+id/pay_id_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_icon_selector"
+        android:button="@null"
+        android:drawableLeft="@drawable/alipay_icon"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/pay_checkbox_circle_selector"
+       
+        android:padding="@dimen/payPadding"
+        android:text="支付宝支付\n需要是支付宝用户" />
+
+    <RadioButton
+        android:id="@+id/pay_id_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_icon_selector"
+        android:button="@null"
+        
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/pay_checkbox_circle_selector"
+        android:drawableLeft="@drawable/wx_icon"
+        android:padding="@dimen/payPadding"
+        
+        android:text="微信支付\n需安装微信客户端" />
+
+    <RadioButton
+        android:id="@+id/pay_id_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_icon_selector"
+        android:button="@null"
+        
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/pay_checkbox_circle_selector"
+        android:drawableLeft="@drawable/bank_icon"
+        android:padding="@dimen/payPadding"
+        android:text="银行转账" />
+
+</RadioGroup>

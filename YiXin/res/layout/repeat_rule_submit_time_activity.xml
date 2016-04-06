@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#E6E6E6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/an_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_width="61dp"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/repeat_rule_submit_time_activity_back_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/back_selector"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="61dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/repeat_rule_submit_time_activity_save_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="保存"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/save_selector"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/repeat_rule_submit_time_activity_edit"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="40dp"
+        android:maxHeight="40dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#00B28C"
+        android:background="@drawable/an_round_all_normal"
+        android:textSize="13sp"
+        android:inputType="number">
+        <requestFocus />
+    </EditText>
+</LinearLayout>

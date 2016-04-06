@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aae6e6e6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_head_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+       
+
+        <RadioButton
+            android:id="@+id/round_private"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_icon_selector"
+            android:paddingBottom="9dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="9dp"
+            android:textSize="20sp"
+            android:text="仅自己" />
+         <RadioButton
+            android:id="@+id/round_public"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_icon_selector"
+            android:paddingBottom="9dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="9dp"
+            android:text="公开" 
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:id="@+id/round_unit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_icon_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="9dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="9dp" >
+
+            <RadioButton
+                android:id="@+id/round_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="指定部门" 
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/round_unit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/an_text_right_next"
+                android:gravity="right"
+                android:paddingRight="10dp" 
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/round_group_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_icon_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="9dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="9dp" >
+
+            <RadioButton
+                android:id="@+id/round_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="指定职位" 
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/round_group_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/an_text_right_next"
+                android:gravity="right"
+                android:paddingRight="10dp" 
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/round_peopel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_icon_selector"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:paddingBottom="9dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="2dp"
+            android:paddingTop="9dp" >
+
+            <RadioButton
+                android:id="@+id/round_peopel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="指定人员"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/round_peopel_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/an_text_right_next"
+                android:gravity="right"
+                android:paddingRight="10dp" 
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

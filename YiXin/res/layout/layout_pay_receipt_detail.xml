@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_pay_head_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_icon_selector"
+            android:orientation="vertical" 
+            android:padding="@dimen/payPadding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/payPadding"
+                 >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.miicaa.base.RoundImage.CircularImage
+                        android:id="@+id/receipt_detail_head"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/an_user_head_large" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_toRightOf="@id/receipt_detail_head"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/payPadding" >
+
+                        <TextView
+                            android:id="@+id/receipt_detail_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/framText"
+                            android:text="" />
+                    </LinearLayout>
+
+                    
+                </RelativeLayout>
+            </LinearLayout>
+
+           
+            
+             <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/payGray" />
+
+               <LinearLayout 
+                   android:paddingTop="@dimen/payPaddinghalf"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text="发票金额："
+                      />
+                   <TextView 
+                       android:id="@+id/receipt_detail_money"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/paypRed"
+                       android:text=""
+                       />
+                  
+               </LinearLayout>
+                <LinearLayout 
+                   android:paddingTop="@dimen/payPaddinghalf"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text="发票抬头："
+                      />
+                   <TextView 
+                       android:id="@+id/receipt_detail_header"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text=""
+                       />
+                  
+               </LinearLayout>
+                <LinearLayout 
+                   android:paddingTop="@dimen/payPaddinghalf"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text="邮寄地址："
+                      />
+                   <TextView 
+                       android:id="@+id/receipt_detail_address"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text=""
+                       />
+                  
+               </LinearLayout>
+                <LinearLayout 
+                   android:paddingTop="@dimen/payPaddinghalf"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text="邮编："
+                      />
+                   <TextView 
+                       android:id="@+id/receipt_detail_code"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text=""
+                       />
+                  
+               </LinearLayout>
+                <LinearLayout 
+                   android:paddingTop="@dimen/payPaddinghalf"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text="联系人："
+                      />
+                   <TextView 
+                       android:id="@+id/receipt_detail_people"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text=""
+                       />
+                  
+               </LinearLayout>
+                <LinearLayout 
+                   android:paddingTop="@dimen/payPaddinghalf"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text="手机或座机："
+                      />
+                   <TextView 
+                       android:id="@+id/receipt_detail_phone"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text=""
+                       />
+                  
+               </LinearLayout>
+                <LinearLayout 
+                   android:paddingTop="@dimen/payPaddinghalf"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView 
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text="电子邮箱："
+                      />
+                   <TextView 
+                       android:id="@+id/receipt_detail_email"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       
+                       android:text=""
+                       />
+                  
+               </LinearLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

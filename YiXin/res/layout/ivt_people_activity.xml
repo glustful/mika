@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ 
+     <RelativeLayout
+        android:id="@+id/matter_detail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_head_bg"
+        android:gravity="top" >
+        <RelativeLayout 
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+         
+            <Button
+           
+                android:id="@+id/ivt_people_contactList_button"
+                style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_nobgd" />
+            
+        </RelativeLayout>
+
+        <TextView 
+            android:id="@+id/matter_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="邀请用户"
+            android:textSize="@dimen/framText"
+            android:textColor="#FFFFFF"/>
+        
+        <RelativeLayout 
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+ 
+
+            <Button
+                android:id="@+id/ivt_people_save_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="提交"
+                android:background="@drawable/bt_nobgd" />
+            
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邀请新同事加入侎佧"
+        android:textColor="#999999"
+        android:layout_marginLeft="5dp"/>
+    <LinearLayout
+        android:id="@+id/ivt_people_more_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/ivt_people_more_img"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+
+            android:src="@drawable/ivt_people_add_button"/>
+
+    <TextView
+        android:id="@+id/ivt_people_more_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2CA5D8"
+        android:layout_marginLeft="2dp"
+        android:text="邀请更多"/>
+
+    </LinearLayout>
+</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ivt_people_list"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- 480/600 = 4/5 -->
+    <!-- 54px 36dp -->
+    <dimen name="icon_size_small">45dp</dimen>
+    <!-- 60px 40dp -->
+    <dimen name="icon_size_normal">50dp</dimen>
+    <!-- 72px 48dp -->
+    <dimen name="icon_size_bigger">60dp</dimen>
+    <!-- 96px 64dp -->
+    <dimen name="icon_size_biggest">80dp</dimen>
+
+    <!-- 18px 12dp -->
+    <dimen name="spacing_horizontal">15dp</dimen>
+    <!-- 12px 8dp -->
+    <dimen name="spacing_vertical">10dp</dimen>
+
+    <!-- 12px 8dp-->
+    <dimen name="spacing_horizontal_small">10dp</dimen>
+    <!-- 8px 6dp-->
+    <dimen name="spacing_vertical_small">7.5dp</dimen>
+
+    <dimen name="list_item_contact_select_h">60dp</dimen>
+</resources>

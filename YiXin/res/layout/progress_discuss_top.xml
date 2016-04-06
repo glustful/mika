@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+   
+    <com.miicaa.base.RoundImage.CircularImage
+        android:id="@id/head_img"
+        android:layout_marginTop="5dp" 
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/an_user_head_large"
+        style="@style/manual_userHead"/>
+    
+    <TextView 
+        android:id="@id/head_name"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_toRightOf="@id/head_img"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/nameTextsize"
+        android:gravity="center_vertical"
+        android:text="一二三三"
+        />
+    <LinearLayout
+    android:id="@+id/contentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_marginTop="5dp"
+    android:layout_below="@id/head_img"
+    android:layout_alignLeft="@id/head_img">
+    <TextView 
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试一下内容显示合适不合适"
+        android:paddingRight="5dp"
+        />
+    <LinearLayout 
+        android:id="@+id/file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+        <ImageView 
+            android:id="@+id/fileView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/an_arrange_file_icon"
+            
+            />
+        <TextView 
+            android:layout_marginLeft="5dp"
+            android:id="@+id/filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件名"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+        <ImageView 
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/an_arrange_photo_icon"
+            />
+        <TextView 
+            android:layout_marginLeft="5dp"
+            android:id="@+id/imgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片名"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+    <TextView 
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/detailTextcolor"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/timesize"
+        android:layout_gravity="center_vertical"
+        android:text=" 2014-10-27 18:00"/>
+    <TextView 
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/completeTextcolor"
+        android:text="已完成"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/detailTextcolor"
+        android:visibility="gone"/>
+    
+   
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/talklayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+     <ImageButton 
+        android:id="@+id/progressTalk"
+        android:layout_width="20dp"
+        android:layout_height="15dp"
+        android:src="@drawable/matter_talk"
+        android:background="#00000000"
+        
+        />
+     <TextView 
+         android:id="@+id/talknum"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom"
+         android:text="(12)"
+         android:textSize="10sp"/>
+     </LinearLayout>
+      </RelativeLayout>
+    
+  
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/dicussLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/contentLayout"
+    
+    android:orientation="vertical" >
+    
+      <TextView
+          android:id="@+id/discussCount"
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          android:paddingLeft="10dp"
+          android:background="@color/tabSelectcolor"
+          android:gravity="center_vertical"
+          android:text="对进展的评论(0)"
+          android:textColor="@color/matterDetailTab" />
+      </LinearLayout>
+      </RelativeLayout>
+      

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/an_top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/frame_contact_ivt_people_button"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:background="@drawable/save_selector"
+            android:text="邀请"
+            />
+
+        <TextView
+            android:id="@+id/org_person__refresh_lable"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:gravity="right"/>
+
+        <TextView
+            android:id="@+id/org_person_list_activity_title"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="通讯录"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="32dp"
+            android:text="刷新"
+            android:id="@+id/contact_refresh_button"
+            android:background="@drawable/save_selector"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_contact_activity_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="horizontal"></LinearLayout>
+</LinearLayout>

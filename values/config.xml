@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="gopush_host">115.29.107.77</string>
+    <string name="gopush_port">8090</string>
+    <string name="appmsgsrv_host">115.29.107.77</string>
+    <string name="appmsgsrv_port">8093</string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:clickable="true"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/matter_other_cell_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/discuss_cell_id_left_head"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/an_user_head_large"
+                    android:scaleType="fitCenter"/>
+
+            <TextView
+                    android:id="@+id/discuss_cell_id_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这就是任务文字文字文字文字或者的标题这就是任务文字文字文字文字或者的标题"
+                    android:textSize="14sp"
+                    android:textColor="#333333"/>
+            <ImageView
+                    android:id="@+id/discuss_cell_id_right_head"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="0"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/an_user_head_large"
+                    android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="4dp"
+                android:background="#FFFFFF"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#DDDAD6"/>
+    </LinearLayout>
+
+
+</LinearLayout>

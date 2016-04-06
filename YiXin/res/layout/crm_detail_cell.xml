@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/white_color_selector">
+    <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/mulFunCellView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                    android:tag="m"
+                    android:id="@+id/detection_cell_id_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/clickLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.miicaa.home.ui.org.LableGroup
+                        android:id="@+id/detection_cell_lableGroup"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <LinearLayout
+                        android:id="@+id/detection_cell_id_layout"
+                        android:layout_marginRight="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <RelativeLayout
+                            android:layout_width="30dp"
+                            android:layout_marginLeft="25dp"
+                            android:layout_height="wrap_content">
+
+                        <com.miicaa.base.RoundImage.CircularImage
+                                android:id="@+id/detection_cell_id_head"
+                                android:layout_width="25sp"
+                                android:layout_height="25sp"
+                                android:layout_marginTop="4dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/an_user_head_large"
+                                android:scaleType="fitCenter" />
+
+                        <TextView
+                                android:id="@+id/detection_cell_id_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/an_strong_notify_bg"
+                                android:text="12"
+                                android:minHeight="10dp"
+                                android:minWidth="10dp"
+                                android:gravity="center"
+                                android:textSize="10sp"
+                                android:textColor="#FFFFFF"
+                                android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:orientation="vertical">
+
+                        <RelativeLayout
+                                android:layout_marginTop="4dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                    android:id="@+id/detection_cell_id_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="张三"
+                                    android:textSize="@dimen/nameTextsize"
+                                    android:textColor="#333333" />
+
+                            <TextView
+                                    android:id="@+id/detection_cell_id_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="十分钟以前"
+                                    android:textSize="12sp"
+                                    android:textColor="#999999"
+                                    android:visibility="gone"
+                                   />
+
+                            <LinearLayout 
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal">
+                            <ImageView
+                                    android:id="@+id/detection_cell_id_remind"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginRight="5dp"
+                                    
+                                    android:src="@drawable/matter_remind_img"/>
+ 								<ImageView
+                                    android:id="@+id/detection_cell_id_attechment"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                  
+                                    android:layout_marginRight="5dp"
+                                  
+                                    android:visibility="gone"
+                                    android:src="@drawable/matter_accessory_img"/>
+                            <ImageView
+                                    android:id="@+id/detection_cell_id_plan"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                           
+                                    android:layout_marginRight="5dp"
+                               
+                                    android:src="@drawable/matter_plan_img"/>
+
+                           
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                       
+                    </LinearLayout>
+                </LinearLayout>
+                 <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="24dp"
+                                >
+
+                            <TextView
+                                    android:id="@+id/detection_cell_id_title"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="这就是任务文字文字文字文字或者的标题这就是任务文字文字文字文字或者的标题"
+                                    android:textSize="15dp"
+                                    android:textColor="@color/matter_title_color" />
+                            <TextView
+                                android:id="@+id/detection_cell_id_momo"
+                                android:layout_marginTop="3dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:text="这就是任务文字文字文字文字或者的标题这就是任务文字文字文字文字或者的标题"
+                                android:textSize="12dp"
+                                android:textColor="@color/matter_title_color" />
+                        </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

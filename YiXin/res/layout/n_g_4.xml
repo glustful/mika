@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/n_g_4">
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true">
+    <ImageView 
+        android:id="@+id/guiText"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:background="@drawable/n_t_4"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/guiPic"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/guiPic"
+        android:layout_width="250dp"
+        android:layout_height="280dp"
+        android:layout_alignLeft="@+id/guiText"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/n_p_4" />
+
+    <ImageButton
+        android:id="@+id/guiLogin"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/n_a_4" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

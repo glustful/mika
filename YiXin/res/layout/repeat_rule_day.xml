@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/repeat_rule_day_times_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@drawable/person_item_text_color"
+                android:textSize="14sp"
+                android:text="频率"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/right_next_selector"
+                android:background="@drawable/round_top_half_selector" />
+
+            <TextView
+                android:id="@+id/repeat_rule_day_times_textview"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="100dp"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:gravity="left|center"
+                android:text="1天重复一次" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="40dp"
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/repeat_rule_day_repeat_stop_button"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@drawable/person_item_text_color"
+                android:textSize="14sp"
+                android:text="重复截止"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/right_next_selector"
+                android:background="@drawable/round_bottom_half_selector" />
+
+            <TextView
+                android:id="@+id/repeat_rule_day_repeat_stop_textview"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="100dp"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:gravity="left|center"
+                android:text="2013-01-01" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="20dp"
+        android:layout_width="match_parent"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nanlus="http://schemas.android.com/apk/res/com.miicaa.home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_pay_head_view" />
+	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackground"
+        android:fillViewport="true"
+        android:scrollbars="none" 
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/payPadding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_icon"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/payPadding" 
+                android:layout_marginBottom="@dimen/payPaddinghalf">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="你目前可开具发票的金额(元)： " />
+
+                <TextView
+                    android:id="@+id/receipt_opening_useMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/paypRed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/payPadding"
+               
+                android:layout_marginTop="@dimen/payPaddinghalf" >
+
+                <com.yxst.epic.yixin.view.TextViewPartColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*发票金额(元)："
+                    nanlus:colorEnd="1"
+                    nanlus:colorStart="0"
+                    nanlus:partTextColor="@color/red" />
+                <EditText 
+                    android:padding="10dp"
+                     android:id="@+id/receipt_opening_money"
+                     android:background="@drawable/pay_receipt_edit_bg"
+                     android:layout_marginBottom="@dimen/payPadding"
+                    android:layout_width="match_parent"
+                    android:inputType="numberDecimal"
+                    android:layout_height="wrap_content"/>
+                <com.yxst.epic.yixin.view.TextViewPartColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*发票抬头："
+                    nanlus:colorEnd="1"
+                    nanlus:colorStart="0"
+                    nanlus:partTextColor="@color/red" />
+                <EditText 
+                    android:padding="10dp"
+                    android:id="@+id/receipt_opening_header"
+                     android:background="@drawable/pay_receipt_edit_bg"
+                     android:layout_marginBottom="@dimen/payPadding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <com.yxst.epic.yixin.view.TextViewPartColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*邮寄地址："
+                    nanlus:colorEnd="1"
+                    nanlus:colorStart="0"
+                    nanlus:partTextColor="@color/red" />
+                <EditText 
+                    android:padding="10dp"
+                    android:id="@+id/receipt_opening_address"
+                     android:background="@drawable/pay_receipt_edit_bg"
+                     android:layout_marginBottom="@dimen/payPadding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <com.yxst.epic.yixin.view.TextViewPartColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*邮编："
+                    nanlus:colorEnd="1"
+                    nanlus:colorStart="0"
+                    nanlus:partTextColor="@color/red" />
+                <EditText 
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:id="@+id/receipt_opening_postcode"
+                     android:background="@drawable/pay_receipt_edit_bg"
+                     android:layout_marginBottom="@dimen/payPadding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <LinearLayout 
+                    android:layout_marginBottom="@dimen/payPadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                 <TextView
+                     android:layout_marginBottom="@dimen/payPadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系人："
+                    />
+                  <TextView
+                      android:id="@+id/receipt_opening_people"
+                     
+                     android:layout_marginBottom="@dimen/payPadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+               </LinearLayout>
+                <com.yxst.epic.yixin.view.TextViewPartColor
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*手机或座机："
+                    nanlus:colorEnd="1"
+                    nanlus:colorStart="0"
+                    nanlus:partTextColor="@color/red" />
+                <EditText 
+                    android:padding="10dp"
+                    android:id="@+id/receipt_opening_phone"
+                     android:background="@drawable/pay_receipt_edit_bg"
+                     android:layout_marginBottom="@dimen/payPadding"
+                    android:layout_width="match_parent"
+                    android:inputType="phone"
+                    android:phoneNumber="true"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电子邮箱："
+                    />
+                <EditText 
+                    android:padding="10dp"
+                    android:id="@+id/receipt_opening_email"
+                     android:background="@drawable/pay_receipt_edit_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+	<LinearLayout 
+	    android:layout_marginTop="@dimen/payPaddinghalf"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="@dimen/payPadding"
+	    android:gravity="center_vertical"
+	    android:background="@color/appBackground">
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="发票寄送统一采用快递到付方式"/>
+	</LinearLayout>
+</LinearLayout>
+<View 
+    
+    android:id="@+id/topView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"/>
+</FrameLayout>

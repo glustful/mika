@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView 
+        android:id="@+id/bgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/guide_bg_bg"/>
+    <ImageButton 
+        android:id="@+id/leaveBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/guide_bg_leaved"
+        android:scaleType="centerInside"
+        android:background="@color/transparent"
+        android:visibility="visible"
+        />
+    <ImageView 
+        android:id="@+id/ceneterView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/leaveBtn"
+        android:src="@drawable/guide_bg_center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+    
+</RelativeLayout>

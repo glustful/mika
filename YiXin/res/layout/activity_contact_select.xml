@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/spacing_horizontal_small"
+        android:paddingRight="@dimen/spacing_horizontal_small"
+        android:paddingBottom="@dimen/spacing_vertical_small"
+        android:paddingTop="@dimen/spacing_vertical_small" 
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_contact_select_h" 
+            android:gravity="center"
+            android:text="选择联系人"/>
+
+        <com.meetme.android.horizontallistview.HorizontalListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_contact_select_h"
+            android:divider="@null"
+            android:fadingEdgeLength="0dp"
+            android:requiresFadingEdge="none"
+            widget:dividerWidth="0dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_top"
+        android:background="#BEBEBE" />
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_divider" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 检查单位item布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_color_selector"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp" 
+    android:focusable="true"
+    android:clickable="true">
+	
+    <RadioButton
+        android:id="@+id/cbCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:button="@null"
+        android:focusable="false"
+        android:text=""
+        android:clickable="false"
+        android:textSize="20sp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/select_kuang_selector"
+        android:gravity="left|center_vertical"
+         />
+
+   
+
+</LinearLayout>

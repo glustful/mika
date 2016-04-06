@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/accessory_file_list_cell_button"
+        android:layout_height="52dp"
+        android:layout_width="match_parent"
+        android:background="@color/transparent" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/accessory_file_list_cell_file_image"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/accessory_file_ico_word"
+                    android:scaleType="fitCenter" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/accessory_file_list_cell_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/layout_selector"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:text="400电话调研方案.docx"
+                    android:textSize="16sp"
+                    android:textColor="#333333" />
+
+      </LinearLayout>
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

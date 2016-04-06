@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:background="@color/white"
+        android:id="@+id/top"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText 
+        android:id="@+id/editText"
+        android:hint="说点什么。。。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+       
+        android:background="@color/transparent"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:minLines="6"/>
+    <TextView 
+        android:id="@+id/zishuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/editText"
+        android:text="0/140"/>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout 
+            android:id="@+id/progressLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+        <ProgressBar 
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            
+            style="@android:style/Widget.ProgressBar.Small"/>
+         <TextView
+                android:id="@+id/progressText"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:hint="定位中..."/>
+        </LinearLayout>
+           
+    <Button 
+        android:id="@+id/locationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="5dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:text=""
+        />
+    </RelativeLayout>
+	<LinearLayout 
+	    android:layout_marginTop="10dp"
+	      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@drawable/white_color_selector">
+    <TextView 
+        android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+          android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="最多允许上传9张"
+        android:textColor="@color/payGray"/>
+    <com.miicaa.common.base.PictureLayout 
+        android:id="@+id/photo"
+       android:padding="10dp"
+       android:background="@drawable/white_color_selector"
+       android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.miicaa.common.base.PictureLayout>
+    </LinearLayout>
+</LinearLayout>

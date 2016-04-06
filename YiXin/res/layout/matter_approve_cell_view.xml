@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:minHeight="42dp"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:paddingLeft="@dimen/paddingleft"
+            android:id="@+id/matter_builder_id_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:text="普通申请"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/white_color_selector"/>
+
+    </LinearLayout>
+</LinearLayout>

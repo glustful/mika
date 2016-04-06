@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:background="@drawable/an_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="61dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentLeft="true">
+
+            <Button
+                    android:id="@+id/browse_range_id_back"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:text="返回"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    android:layout_height="32dp"
+                    android:background="@drawable/back_selector"/>
+        </RelativeLayout>
+
+        <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="查看范围"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:minHeight="42dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:id="@+id/browse_range_id_public"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@drawable/person_item_text_color"
+                    android:textSize="14sp"
+                    android:text="公开"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/sex_icon_selector"
+                    android:background="@drawable/round_top_half_selector"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:id="@+id/browse_range_id_person_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@drawable/person_item_text_color"
+                    android:textSize="14sp"
+                    android:text="仅参与人、抄送人可见"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/sex_icon_selector"
+                    android:background="@drawable/round_bottom_half_selector"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

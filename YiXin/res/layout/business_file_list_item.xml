@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_color_selector"
+    android:orientation="vertical"
+    android:padding="@dimen/payPadding" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/business_file_head_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/accessory_file_ico_execl" />
+		 <LinearLayout
+		     android:id="@+id/business_file_list_item_middle_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/business_file_star_img"
+                android:button="@drawable/check_star_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/business_file_list_item_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/business_file_head_img"
+            android:layout_toLeftOf="@id/business_file_list_item_middle_right"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/payPadding" >
+
+            <TextView
+                 android:id="@+id/business_file_title"
+                android:textSize="@dimen/bigsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <TextView
+                 android:id="@+id/business_file_descript"
+                android:textSize="@dimen/middlesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014-12-31 15：35：02" 
+                android:singleLine="true"
+                android:ellipsize="end"/>
+        </LinearLayout>
+
+       
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/business_file_list_item_middle"
+            android:layout_below="@id/business_file_list_item_middle"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/payPadding"
+            
+            android:paddingTop="@dimen/payPaddinghalf"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/business_file_size"
+                android:textSize="@dimen/smallsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/business_file_time"
+                android:textSize="@dimen/smallsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/matter_title_color"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/business_file_creator"
+                android:textSize="@dimen/smallsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/matter_title_color"
+                android:text="" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

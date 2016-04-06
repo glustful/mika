@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- h-54px -->
+    <dimen name="icon_size_small">36dp</dimen>
+    <!-- h-60px -->
+    <dimen name="icon_size_normal">40dp</dimen>
+    <!-- m-54px -->
+    <dimen name="icon_size_bigger">54dp</dimen>
+    <!-- h-96px -->
+    <dimen name="icon_size_biggest">64dp</dimen>
+    
+    <!-- h-18px -->
+    <dimen name="spacing_horizontal">12dp</dimen>
+    <!-- h-12px -->
+    <dimen name="spacing_vertical">8dp</dimen>
+    
+    <!-- h-12px -->
+    <dimen name="spacing_horizontal_small">8dp</dimen>
+    <!-- h-8px -->
+    <dimen name="spacing_vertical_small">6dp</dimen>
+    
+    <dimen name="list_item_contact_select_h">48dp</dimen>
+    
+    <!-- h- 48px 32px -->
+    <dimen name="grid_item_biaoqing_size">24dp</dimen>
+    
+    <!-- h-36px -->
+    <dimen name="divider_bar_h">24dp</dimen>
+    
+    <dimen name="divider_line_small_h">1px</dimen>
+    
+    <dimen name="divider_line_big_h">1dp</dimen>
+    
+    <!-- h-80px -->
+    <dimen name="main_tab_h">53.333dp</dimen>
+    
+    <!-- h-72px -->
+    <dimen name="btn_green_h">48dp</dimen>
+    
+    <!-- h-72px -->
+    <dimen name="item_h">48dp</dimen>
+    
+    <dimen name="rcd_size">185dp</dimen>
+    
+    <!-- h-51px -->
+    <dimen name="rcd_cancel_bg_h">34dp</dimen>
+    
+    <dimen name="chat_item_img_from_iv_maxSize">160dp</dimen>
+    <dimen name="chat_item_img_to_iv_maxSize">120dp</dimen>
+</resources>

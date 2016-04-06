@@ -1,0 +1,17 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/searchKuang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton 
+        android:id="@+id/fram_matter_screen_view"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingLeft="10dp"
+        android:src="@drawable/an_matter_screen"
+        android:layout_alignParentRight="true"
+        style="?android:attr/buttonStyle"
+        android:background="@android:color/transparent"
+        />
+    </RelativeLayout>
+    

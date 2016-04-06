@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="上午   09:00"/>
+    <Button 
+        android:id="@+id/signBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/today_sign"
+        android:text="今日签到"
+        android:textSize="20sp"
+        android:textColor="@color/today_sigin_color"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true"/>
+    <ProgressBar 
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        />
+    
+    <ImageView 
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/today_has_sigin"/>
+    
+    <Button 
+        android:id="@+id/signRemind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/sign_in_remind"
+        android:textColor="@color/sigin_remind_color"
+        android:layout_below="@+id/signBtn"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"/>
+</RelativeLayout>

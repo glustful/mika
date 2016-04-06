@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/matterPeoTopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_top"
+            android:orientation="horizontal" >
+            <LinearLayout 
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            <TextView
+                style="@style/progressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/progressTotal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                 >
+
+                <TextView
+                    android:id="@+id/matterNodo"
+                    style="@style/progressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未填写" />
+
+                <ImageView
+                    android:id="@+id/nodoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/matter_tag_bg"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/matterDoing"
+                    style="@style/progressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已填写" />
+
+                <ImageView
+                    android:id="@+id/todoLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/matter_tag_bg"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/matterComplete"
+                    style="@style/progressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已完成" />
+
+                <ImageView
+                    android:id="@+id/doneLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/matter_tag_bg" 
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    <!--  <HorizontalScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        -->
+                
+     <com.miicaa.detail.MyGridView 
+        android:id="@+id/grid"
+        android:numColumns="auto_fit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_round_all_normal"
+        android:horizontalSpacing="3dp"
+        android:visibility="gone"/>
+        <!-- <android.support.v4.view.ViewPager
+            android:id="@+id/gridpager"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/an_round_all_normal"
+            android:visibility="gone"
+            />
+             -->
+        
+
+        <com.miicaa.detail.DetailProgressListView
+            android:id="@+id/progressList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:fastScrollEnabled="false"
+            android:dividerHeight="10dp"
+            android:tag="true"
+             />
+        
+        
+        
+        
+        
+
+</LinearLayout>

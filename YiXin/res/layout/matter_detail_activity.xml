@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   
+<com.yxst.epic.yixin.view.ResizeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alittle_white"
+    android:orientation="vertical" >
+
+ 
+    
+    <RelativeLayout
+        android:id="@+id/matter_detail_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_head_bg"
+        android:gravity="top" >
+         
+            <Button
+           
+                android:id="@+id/cancleButton"
+                style="@style/back_button"
+                android:gravity="center"
+                 android:layout_centerVertical="true"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_nobgd" />
+            
+                <Button
+                android:id="@+id/moreButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:text="更多"
+                android:background="#00000000" />
+            
+
+        <com.miicaa.home.view.PaomadengTextView 
+            android:id="@+id/matter_detail_title"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="详情页面"
+            android:gravity="center"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="@dimen/framText"
+            android:textColor="#FFFFFF"/>
+        
+    </RelativeLayout>
+
+   <com.miicaa.detail.DetailScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true"
+      android:layout_weight="1"
+      
+      android:id="@+id/scrollview">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        
+    <LinearLayout 
+        android:id="@+id/matter_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+        <include 
+            android:id="@+id/manualTab"
+            layout="@layout/detail_tab_layout"
+            />
+        
+    <LinearLayout
+        android:id="@+id/fragmentadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+     <include 
+         
+            android:id="@+id/holdTopTab"
+            layout="@layout/detail_tab_layout"/>
+
+       </LinearLayout>
+</com.miicaa.detail.DetailScrollView>
+   
+
+
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+<com.miicaa.detail.ProgressFootView_ 
+    android:id="@+id/progressFoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"/>
+<com.miicaa.detail.DiscussFootView_ 
+    android:id="@+id/discussFoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"/>
+<com.miicaa.detail.ApprovalFootView_ 
+    android:id="@+id/approvalFoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"/>
+
+</LinearLayout>
+   
+
+
+</com.yxst.epic.yixin.view.ResizeLayout>

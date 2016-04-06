@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@drawable/matter_do_cell_selector"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/matter_cell_id_item_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <com.miicaa.home.ui.org.LableGroup
+            android:id="@+id/matter_cell_view_label_group"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+           
+
+
+        <LinearLayout
+            android:id="@+id/headcontent"
+            android:layout_marginRight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="58dp"
+                android:layout_height="wrap_content">
+
+                <com.miicaa.base.RoundImage.CircularImage
+                    android:id="@+id/matter_cell_id_head"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/an_user_head_large"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/matter_cell_id_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/an_strong_notify_bg"
+                    android:text="12"
+                    android:minHeight="10dp"
+                    android:minWidth="10dp"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/matter_cell_id_weak_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/an_weak_notify_bg"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/matter_cell_id_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="张三"
+                        android:textSize="@dimen/nameTextsize"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/matter_cell_id_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="十分钟以前"
+                        android:textSize="12sp"
+                        android:textColor="#999999" />
+
+                    <ImageView
+                        android:id="@+id/matter_cell_id_remind"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/matter_cell_id_time"
+                        android:src="@drawable/matter_remind_img"/>
+
+                    <ImageView
+                        android:id="@+id/matter_cell_id_plan"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/matter_cell_id_remind"
+                        android:src="@drawable/matter_plan_img"/>
+
+                    <ImageView
+                        android:id="@+id/matter_cell_id_accessory"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/matter_cell_id_plan"
+                        android:src="@drawable/matter_accessory_img"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+              
+            </LinearLayout>
+        </LinearLayout>
+        
+          <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/matter_cell_id_momo"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="这就是任务文字文字文字文字或者的标题这就是任务文字文字文字文字或者的标题"
+                        android:textSize="15dp"
+                        android:textColor="#999999" />
+                    <TextView
+                        android:id="@+id/matter_cell_id_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="这就是任务文字文字文字文字或者的标题这就是任务文字文字文字文字或者的标题"
+                        android:textSize="12sp"
+                        android:textColor="#333300"
+                        />
+                </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>

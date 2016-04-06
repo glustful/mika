@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp" 
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_item_time"
+        android:text="晚上20:53" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:background="@drawable/qqmail_read_attach_list"
+        android:orientation="vertical"
+        android:padding="6dp" >
+
+        <TextView
+            android:id="@+id/tv_msg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="报销审批-张三" />
+
+        <TextView
+            android:id="@+id/tv_msg_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/tv_msg_title"
+            android:text="7月21日"
+            android:textColor="#787878" />
+
+        <TextView
+            android:id="@+id/tv_msg_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@+id/tv_msg_time"
+            android:text="报销内容：XXXXXX，XXXXXX。"
+            android:textColor="#787878" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@+id/iv_option"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tv_msg_content"
+            android:text="点击进行操作" />
+
+        <ImageView
+            android:id="@+id/iv_option"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_msg_content"
+            android:src="@drawable/ic_menu_set_as" />
+    </RelativeLayout>
+
+</RelativeLayout>

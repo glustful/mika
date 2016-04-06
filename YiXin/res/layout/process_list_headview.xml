@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+ <com.miicaa.base.RoundImage.CircularImage 
+        android:id="@+id/headImageView"
+        android:layout_width="@dimen/normal_large_head"
+        android:layout_height="@dimen/normal_large_head"
+        android:src="@drawable/an_user_head_large"/>
+ 
+ <TextView 
+     android:id="@+id/headNameTextView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:paddingLeft="10dp"
+     android:layout_gravity="center_vertical"
+     android:gravity="center_vertical"/>
+ </LinearLayout>
+    
+        <ImageView 
+            android:id="@+id/topLine"
+            android:layout_width="wrap_content"
+            android:paddingLeft="25dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/approve_process_top"/>
+    
+</LinearLayout>

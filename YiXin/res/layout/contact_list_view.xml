@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <!--<ScrollView-->
+            <!--android:id="@+id/contact_list_scrollview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fadingEdge="vertical"-->
+            <!--android:scrollbars="vertical"-->
+            <!--android:background="#ffffff">-->
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                <LinearLayout 
+                   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white" >
+                <com.miicaa.home.ui.org.LableGroup
+                    android:id="@+id/contact_list_view_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    
+                    android:background="@color/white"/>
+
+                </LinearLayout>
+                
+
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/contact_list_layout_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:orientation="vertical"/>-->
+                <!--<com.miicaa.common.base.BaseListView-->
+                    <!--android:id="@+id/contact_base_info_list"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:divider="@null"-->
+                    <!--android:dividerHeight="0dp"-->
+                    <!--android:groupIndicator="@null"-->
+                    <!--android:scrollbars="none"-->
+                    <!--android:background="#ffffff"-->
+                    <!--android:listSelector="@drawable/person_item_selector" />-->
+                <ListView
+                    android:id="@+id/contact_list_view_list"
+                    android:groupIndicator="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:dividerHeight="1dp"
+                    android:fastScrollEnabled="false">
+
+                </ListView>
+            </LinearLayout>
+
+        <!--</ScrollView>-->
+
+        <com.miicaa.home.ui.contactList.ContactIndexListView
+            android:id="@+id/contact_index_list"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#00000000" 
+            android:scrollbars="none"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

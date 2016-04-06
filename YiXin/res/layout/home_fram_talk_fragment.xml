@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+      
+            android:background="@drawable/an_head_bg">
+        <TextView 
+            android:id="@+id/fram_talk_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="侎聊"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        
+        <Button 
+            android:id="@+id/fram_talk_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonStyleSmall"
+            android:text="添加"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/fram_talk_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_color_selector"
+    android:gravity="center_vertical"
+    android:minHeight="42dp"
+    android:paddingRight="@dimen/paddingright" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="@string/process_type"
+        android:textColor="#333333"
+        android:layout_centerVertical="true"
+        android:textSize="16sp" />
+    
+     <CheckBox
+        android:id="@+id/fixedProcessButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="6dp"
+        android:button="@null"
+        android:background="@drawable/fixed_process_selector"
+        android:textColor="@android:color/white"
+        />
+    
+    <CheckBox
+        android:id="@+id/freeProcessButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="6dp"
+        android:button="@null"
+        android:background="@drawable/free_process_selector"
+        android:textColor="@android:color/white"
+         android:layout_toLeftOf="@+id/fixedProcessButton"
+        />
+    
+   
+
+</RelativeLayout>

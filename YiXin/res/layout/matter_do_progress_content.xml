@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   >
+  <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="5dp">
+    
+      
+    <com.miicaa.base.RoundImage.CircularImage
+        
+        android:id="@id/head_img"
+        android:src="@drawable/an_user_head_large"
+        android:layout_width="30sp"
+        android:layout_height="30sp"/>
+         
+    
+    <TextView 
+        android:id="@id/head_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/head_img"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/nameTextsize"
+        android:paddingTop="3dp"
+        android:text="一二三三"
+        />
+    
+    <RatingBar 
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_alignTop="@id/head_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:progressDrawable="@drawable/rating_yellow"
+        android:visibility="gone"/>
+    <Button 
+        android:id="@+id/continueProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@color/transparent"
+        android:text="继续执行"
+        android:layout_alignTop="@id/head_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/todonum"
+        android:visibility="gone"/>
+    
+    <TextView 
+        android:id="@+id/noProgressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/no_progress"
+        android:layout_below="@id/head_img"
+        android:visibility="gone"
+        android:layout_alignLeft="@id/head_name"/>
+    
+   <com.miicaa.utils.AddMoreListView
+       android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/head_img"
+        android:background="@drawable/progress_kuang"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="3dp"
+       
+        />
+   
+    </RelativeLayout>
+ 
+</LinearLayout>

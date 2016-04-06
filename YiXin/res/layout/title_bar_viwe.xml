@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/an_top_bg"
+        android:layout_width="match_parent"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="62dp"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/title_bar_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_height="32dp"
+                android:background="@drawable/back_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="查看所有进展"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

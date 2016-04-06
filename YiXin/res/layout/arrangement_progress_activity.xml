@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#FFFFFF"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  
+     <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+      
+            android:background="@drawable/an_head_bg">
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <Button 
+                android:id="@+id/arrange_progress_id_back"
+                style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000" />
+        </RelativeLayout>
+        <TextView 
+             android:id="@+id/person_home_id_user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看办理过程"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        
+        
+    </RelativeLayout>
+
+    <ExpandableListView
+            android:id="@+id/arrange_progress_id_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </ExpandableListView>
+</LinearLayout>

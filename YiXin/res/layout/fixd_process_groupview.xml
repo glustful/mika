@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+<CheckBox 
+    android:id="@+id/groupCheckBox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:visibility="visible"
+    android:button="@drawable/select_kuang_selector"
+    />
+<TextView 
+    android:id="@+id/groupTextView"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:textSize="@dimen/check_name_size"
+    android:drawableRight="@drawable/checkbox_group_selector"
+    android:paddingRight="5dp"/>
+</LinearLayout>

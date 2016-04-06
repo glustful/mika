@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/an_top_bg"
+        android:layout_width="match_parent"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="62dp"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/notice_id_back"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/back_selector"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="工作动态"
+            android:textColor="#333333"
+            android:textSize="16sp"/>
+        <!--
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="62dp"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/notice_id_refresh"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="刷新"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/save_selector"/>
+        </RelativeLayout>
+        -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/dynamic_id_head"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/an_user_head_large"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:id="@+id/dynamic_id_name"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dynamic_id_head"
+            android:text="张文强"
+            android:textSize="23sp"
+            android:textColor="#333333"/>
+        <TextView
+            android:id="@+id/dynamic_id_dept"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dynamic_id_head"
+            android:layout_below="@id/dynamic_id_name"
+            android:text="部门：产品部"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:textColor="#999999"/>
+        <TextView
+            android:id="@+id/dynamic_id_postion"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dynamic_id_head"
+            android:layout_below="@id/dynamic_id_dept"
+            android:text="职位：设计师"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:textColor="#999999"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:id="@+id/dynamic_id_listview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+</LinearLayout>

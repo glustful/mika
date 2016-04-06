@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/spacing_horizontal"
+    android:paddingLeft="@dimen/spacing_vertical"
+    android:paddingRight="@dimen/spacing_vertical"
+    android:paddingTop="@dimen/spacing_horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_vertical_small"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tvVersionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_horizontal_small"
+                android:text=""
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size_normal"
+            android:gravity="center_vertical"
+            android:text="功能介绍" />
+
+        <View style="@style/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size_normal"
+            android:gravity="center_vertical"
+            android:text="系统通知" />
+
+        <View style="@style/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size_normal"
+            android:gravity="center_vertical"
+            android:text="帮助与反馈" />
+
+        <View style="@style/divider" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size_normal"
+            android:gravity="center_vertical"
+            android:text="检查新版本" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="使用条款和隐私政策"
+            android:textColor="#4A73A7"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_vertical_small"
+            android:gravity="center"
+            android:text="云南远信数通科技有限公司 版权所有\nCopyright © 2011-2014 \nAll Rights Reserved."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

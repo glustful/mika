@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="notification" />
+    <item type="id" name="update_notification" />
+<item name="np__increment" type="id" />
+   
+ <item name="np__decrement" type="id" />
+ <item name="head_img" type="id"/>
+ <item name="head_name" type="id"/>
+ <item type="id" name="tag_json"/>
+ <item type="id" name="tag_type"/>
+ <item type="id" name="tag_text"/>
+ <item type="id" name="tag_relation"/>
+ <item type="id" name="tag_self"/>
+</resources>

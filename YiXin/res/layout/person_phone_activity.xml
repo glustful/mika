@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#E6E6E6"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <RelativeLayout
+            android:background="@drawable/an_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="61dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentLeft="true">
+            <Button
+                    android:id="@+id/phone_id_back"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:text="返回"
+                    android:textSize="14sp"
+                    android:textColor="#535353"
+                    android:layout_height="32dp"
+                    android:background="@drawable/back_selector"/>
+
+        </RelativeLayout>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="拨电话"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+                android:id="@+id/phone_id_call_phone_layout"
+                android:background="@drawable/round_top_half_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拨手机"
+                    android:textColor="#999999"
+                    android:textSize="16sp"/>
+            <TextView
+                    android:id="@+id/phone_id_call_phone"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#00B28C"
+                    android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/phone_id_phone_layout"
+                android:background="@drawable/round_bottom_half_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拨座机"
+                    android:textColor="#999999"
+                    android:textSize="16sp"/>
+            <TextView
+                    android:id="@+id/phone_id_phone"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#00B28C"
+                    android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

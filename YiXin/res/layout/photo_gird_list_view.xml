@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:layout_width="113dp"
+        android:layout_height="113dp">
+    <ImageView
+        android:id="@+id/photo_grid_list_image"
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        />
+        <CheckBox
+            android:id="@+id/photo_grid_list_checkview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/select_checkbox_selector"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/photo_grid_list_imgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片名"
+            />
+        <TextView
+            android:id="@+id/photo_grid_list_imgCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(10)"
+
+            />
+        </LinearLayout>
+        </RelativeLayout>
+
+</LinearLayout>

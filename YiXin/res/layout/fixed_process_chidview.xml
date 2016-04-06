@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <com.miicaa.base.RoundImage.CircularImage 
+        android:id="@+id/headImageView"
+        android:layout_width="@dimen/normal_little_head"
+        android:layout_height="@dimen/normal_little_head"
+        android:src="@drawable/an_user_head_large"
+        android:layout_marginLeft="45dp"/>
+    
+    <CheckBox 
+        android:id="@+id/childCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/headImageView"
+        android:layout_alignBottom="@+id/headImageView"
+        android:paddingLeft="40dp"
+        android:layout_marginLeft="10dp"
+        android:text="杨东东"
+        android:button="@drawable/select_kuang_selector"
+        android:textSize="@dimen/check_name_size"/>
+
+    
+</RelativeLayout>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#E6E6E6"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+   <include 
+       android:id="@+id/headView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       layout = "@layout/layout_head_view"/>
+        
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:id="@+id/at_sreach_id_edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+        <EditText
+                android:id="@+id/at_sreach_id_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#02B38C"
+                android:background="@drawable/contact_list_search_input"
+                android:paddingLeft="5dp"
+                android:hint="搜索..."
+                android:maxLength="140"
+                android:textColorHint="#333333"
+                android:textSize="15sp"/>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/at_sreach_id_search_layout">
+            <TextView
+                    android:id="@+id/at_sreach_id_title"
+                    android:text="选择最近@的人、部门或者职位"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:background="#B4E8DD"/>
+            <ListView
+                    android:id="@+id/at_sreach_id_search_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+         </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

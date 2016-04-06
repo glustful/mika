@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <com.miicaa.common.base.dataPicker.DataPicker
+                android:id="@+id/data_picker_dialog_index_dataPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/NPWidget.Holo.Light.NumberPicker" />
+
+            <com.miicaa.common.base.dataPicker.DataPicker
+                android:id="@+id/data_picker_dialog_week_dataPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/NPWidget.Holo.Light.NumberPicker" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/data_picker_dialog_com_button"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:text="完成" />
+    </LinearLayout>
+
+</LinearLayout>

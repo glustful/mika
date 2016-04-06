@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.yxtech.example.oa.platform.activity.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sub_menu_bg" >
+            
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginRight="6dp"
+                android:scaleType="center"
+                android:src="@drawable/an_user_head_large" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:textSize="18sp"
+                android:text="用户" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_icon"
+                android:layout_below="@+id/tv_name"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:gravity="center_vertical"
+                android:text="用户信息"
+                android:textColor="#787878"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:background="@drawable/sub_menu_bg" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/abc_ab_share_pack_holo_light"
+                android:drawableLeft="@drawable/app_panel_voiceaudio_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:text="电话：15827330000"
+                android:textSize="18sp" 
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/abc_ab_share_pack_holo_light"
+                android:drawableLeft="@drawable/app_panel_fav_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:text="邮箱：XXXX@hotmail.com"
+                android:textSize="18sp" 
+                android:padding="6dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/abc_ab_share_pack_holo_light"
+                android:drawableLeft="@drawable/app_panel_friendcard_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center_vertical"
+                android:text="主页：http://www.XXX.com"
+                android:textSize="18sp" 
+                android:padding="6dp"
+                />
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/btn_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+			android:background="@drawable/signup_addfriend_greenbtn"
+            android:text="发送消息"
+            android:textColor="#FFFFFF"
+            android:onClick="onSendMsgBtnClick"/>
+    </LinearLayout>
+
+</ScrollView>

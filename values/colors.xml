@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="windowBackground">#EBEBEB</color>
+    
+    <color name="list_selector_normal">#FFFFFF</color>
+    <color name="list_selector_pressed">#D9D9D9</color>
+
+    <drawable name="list_selector_normal">#FFFFFF</drawable>
+    <drawable name="list_selector_pressed">#D9D9D9</drawable>
+
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    
+</resources>

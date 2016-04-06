@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#FFFFFF"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05">
+        <RelativeLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp">
+            <com.miicaa.base.RoundImage.CircularImage
+                    android:id="@+id/personnel_cell_id_head"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/an_user_head_large"
+                android:scaleType="fitCenter"/>
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/personnel_cell_id_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:lines="1"
+                android:textSize="16sp"
+                android:text="张三"/>
+        <LinearLayout
+            android:id="@+id/personnel_cell_id_star_layout"
+            android:layout_marginLeft="4dp"
+            android:paddingRight="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_weight="1"/>
+
+            <ImageView
+                    android:id="@+id/personnel_cell_id_one_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/star_large_f"/>
+
+            <ImageView
+                    android:id="@+id/personnel_cell_id_two_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/star_large_f"/>
+
+            <ImageView
+                    android:id="@+id/personnel_cell_id_thr_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/star_large_f"/>
+
+            <ImageView
+                    android:id="@+id/personnel_cell_id_fou_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/star_large_uf"/>
+
+            <ImageView
+                    android:id="@+id/personnel_cell_id_fir_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/star_large_uf"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

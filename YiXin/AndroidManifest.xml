@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.miicaa.home"
+    android:versionCode="115"
+    android:versionName="2.0.9" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16"
+        android:maxSdkVersion="22" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />      
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="getui.permission.GetuiService" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- 调用本地相册库权限 -->
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- 可选权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 自定义权限 -->
+    <permission
+        android:name="getui.permission.GetuiService"
+        android:protectionLevel="normal" />
+    
+    
+
+    <application
+        android:name="com.yxst.epic.yixin.MyApplication_"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+       
+        
+        <activity
+            android:name="com.yxst.epic.yixin.activity.ChatActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MiliaoTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.ContactSubListActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.ChatImagesActivity_"/>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.ContactDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.ContactSelectActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.QunLiaoActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.ChatDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MiliaoTheme" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.AppDetailActivity_"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.AboutActivity_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.ContactSearchActivity_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.UpdateEnableActivity_"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.yxst.epic.yixin.activity.CaptureResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.yxst.epic.yixin.service.MsgService" >
+        </service>
+        <service android:name="com.yxst.epic.yixin.service.UpdateService" >
+        </service>
+        <service android:name="com.yxst.epic.yixin.service.YiXinPushCliServiceImpl" >
+            <intent-filter>
+                <action android:name="com.yxst.epic.yixin.push.service.PushCliService" />
+            </intent-filter>
+        </service>
+
+        <!-- miicaa -->
+        <activity android:name="com.miicaa.home.ui.home.TestActivity_" />
+        <activity
+            android:name="com.miicaa.utils.fileselect.TestFileActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.guidepage.GuidePageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.miicaa.home.ui.login.HomeLoginActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.miicaa.home.ui.login.RegisterActivity_"
+            android:theme="@style/MiliaoTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.miicaa.home.ui.checkwork.CheckWorkActivity_"
+            android:theme="@style/MiliaoTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.miicaa.home.ui.checkwork.CheckWorkSignActivity_"
+            android:theme="@style/MiliaoTheme"
+            android:screenOrientation="portrait"/>
+         <activity
+            android:name="com.miicaa.home.ui.checkwork.CheckWorkPersonDetailActivity_"
+            android:theme="@style/MiliaoTheme"
+            android:screenOrientation="portrait"/>
+         <activity
+            android:name="com.miicaa.home.ui.checkwork.EditSignBeizhuActivity_"
+            android:theme="@style/MiliaoTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.miicaa.utils.fileselect.DirFileListActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.utils.fileselect.BrowseFileActivity_"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PersonHome_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.detail.ContinueProgressActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.picture.PictureShowAtivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.photoGrid.SelectPictureActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+         <activity
+            android:name="com.miicaa.home.ui.photoGrid.ScanerPhotoActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PersonOtherDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PhoneCall"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PhoneSendMsg"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PersonMeDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PersonHeadEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity android:name="com.miicaa.home.ui.person.PersonPwdEdit" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PersonBaseInfoEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PersonSexEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PersonUnitChange"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.PersonDepartEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.orgTreeList.OrgPersonListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.common.repeatRule.RepeatRuleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.ArrangementCreate"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.common.repeatRule.RepeatRuleSubmitTimeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.AutoDoneEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.BorwseRangeEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.ArragementLabEdit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.AddLabEditor"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.ArrangementDetail"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.assessment.AssessmentNewTypeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.assessment.AssessmentNewFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.assessment.AssessmentSimpleInfoForm"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.assessment.AssessmentMoreInfoForm"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.assessment.AssessmentProcessFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.common.accessory.AccessoryListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.common.accessory.AccessoryFileListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.ArrangementPlan_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.ArrangementPersonnel"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.ArrangementProgress"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.ArrangementFinish"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.ArrangementComment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.WebActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.org.NoticeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.person.DynamicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.matter.MatterBuilder"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.matter.MatterEditor"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.matter.approveprocess.ApproveFixedSingleActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/MiliaoTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+         <activity
+            android:name="com.miicaa.home.ui.matter.approveprocess.ApproveFixedGroupActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/MiliaoTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        
+         <activity 
+            android:name="com.miicaa.home.ui.matter.approveprocess.ApprovalProcessListActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/MiliaoTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity
+            android:name=".ui.contactGet.SelectContacter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.IvtPeople.IvtPeopleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.guidepage.GuideExperActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.picture.PhotoCheck_"
+            android:label="PhotoCheck"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.utils.fileselect.FileListActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <service android:name="com.miicaa.home.data.service.CacheCtrlSrv" >
+            <intent-filter>
+                <action android:name="com.miicaa.home.data.service.CacheCtrlSrv" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+        
+        
+        <service android:name="com.miicaa.home.data.service.CacheUpdateSrv" >
+            <intent-filter>
+                <action android:name="com.miicaa.home.data.service.CacheUpdateSrv" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.miicaa.home.ui.detection.DitectionMatter"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.calendar.DitectionCalendar"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miicaa.home.ui.calendar.FramCalendarActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.business.file.BusinessFileActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.business.file.BusinessFileSearchActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.business.file.BusinessFileNORActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.business.file.UploadPicActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.business.file.UploadFileActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.business.file.SelectRoundActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+         <activity
+            android:name="com.miicaa.base.share.round.SelectRoundActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+          <activity
+            android:name="com.miicaa.base.share.select.SelectKindsActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+           <activity
+            android:name="com.miicaa.base.share.industry.IndustryActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+            <activity
+            android:name="com.miicaa.base.share.contact.AddContactActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+             <activity
+            android:name="com.miicaa.base.share.contact.ShowContactActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.pay.PayMainActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <data android:scheme="wx18d1d3b110e59bd0" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.miicaa.home.ui.pay.BillRecordActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+         <activity
+            android:name="com.miicaa.home.ui.pay.PayMentActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" 
+            />
+        <activity
+            android:name="com.miicaa.home.ui.pay.BillDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+         <activity
+            android:name="com.miicaa.home.ui.pay.BillGoodDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+         <activity
+            android:name="com.miicaa.home.ui.pay.BoughtPackageActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.pay.MyFundActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.pay.ReceiptRecordActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.pay.ReceiptDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.pay.ReceiptOpeningActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.pay.BuyPackageActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.pay.BuyFivePackageActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.pay.AccountRechargeActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+             />
+         <activity
+            android:name="com.miicaa.home.ui.report.WorkReportActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+             />
+         <activity
+            android:name="com.miicaa.home.ui.report.ReportItemDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+             />
+         <activity
+            android:name="com.miicaa.home.ui.report.ReportDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+             />
+         <activity
+            android:name="com.miicaa.home.ui.report.CheckOfRange_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+             />
+         <activity
+            android:name="com.miicaa.home.ui.enterprise.EnterpriceMainActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" 
+             />
+          <activity
+            android:name="com.miicaa.home.ui.enterprise.MyServiceActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" 
+             />
+         
+         <activity
+            android:name="com.miicaa.home.ui.pay.AccountRechargeSuccess_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+         
+          <activity
+            android:name="com.miicaa.home.ui.announcement.AnnouncementActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+           <activity
+            android:name="com.miicaa.home.ui.announcement.AnnouncementDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.miicaa.home.ui.picture.BorwsePicture_" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name="com.miicaa.home.ui.photoGrid.PhotoGridActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.photoGrid.PhotoGridContentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.photoGrid.BigPhotoCheckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.home.ui.home.FramMainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MiliaoTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity 
+            android:name="com.miicaa.home.ui.discover.DiscoverActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/MiliaoTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity 
+            android:name="com.miicaa.home.ui.home.GuideBackgroundActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity 
+            android:name="com.miicaa.detail.StopApproveActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/MiliaoTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity
+            android:name="com.miicaa.detail.DiscussApproveActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.detail.DiscussProgressActivity_"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.miicaa.detail.MatterDetailAcrtivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.miicaa.detail.ProgressDiscussActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <!-- 手势activity -->
+         <activity
+            android:name="com.miicaa.home.ui.login.GestureLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+           
+        </activity>
+        <activity
+            android:name="com.miicaa.home.ui.login.CreateGesturePasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.miicaa.home.ui.login.GuideGesturePasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        
+        <!-- CRM activity -->
+         <activity
+            android:name="com.miicaa.home.ui.discover.crm.CRMNewCustomActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+ 		<activity
+            android:name="com.miicaa.home.ui.discover.crm.CRMDetailActivity_"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" >
+        </activity>
+        <!-- alipay sdk end -->
+        <!-- 微信返回界面 -->
+        <activity
+            android:name="com.miicaa.home.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <!-- end -->
+        <!-- 个推SDK配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="appid"
+            android:value="3ikOowGIaD7E3t21UxSTm4" />
+        <meta-data
+            android:name="appsecret"
+            android:value="BPPQyyfbf09loGF9GRLNE7" />
+        <meta-data
+            android:name="appkey"
+            android:value="7e3z9uUF8J8jBmGKm2fUd6" />
+        <meta-data
+            android:name="groupid"
+            android:value="" />
+
+        <activity
+            android:name="com.igexin.sdk.SdkActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:screenOrientation="portrait"
+            android:taskAffinity="android.task.GexinSdkActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="com.igexin.action.popupact.com.miicaa.home" />
+                <!-- com.igexin.action.popupact.第三方的包名 -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <service 
+            android:name="com.miicaa.service.ProgressNotifyService"></service>
+        
+        <service 
+            android:name="com.miicaa.service.VersionPanduanService"></service>
+        <service 
+            android:name="com.miicaa.service.EnterpriseService"/>
+        <service 
+            android:name="com.miicaa.service.ContactRefreshService"/>
+
+        <!-- 配置弹框activity -->
+        <activity
+            android:name="com.igexin.getuiext.activity.GetuiExtActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:screenOrientation="portrait"
+            android:taskAffinity="android.task.myServicetask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.igexin.sdk.SdkMainService"
+            android:exported="false"
+            android:label="NotifyCenter"
+            android:process=":pushservice" >
+        </service>
+        <service
+            android:name="com.igexin.sdk.coordinator.SdkMsgService"
+            android:exported="true"
+            android:label="NotifyCenterAIDL"
+            android:process=":pushservice" >
+        </service>
+
+        <!-- 个推download模块配置 -->
+        <service
+            android:name="sdk.download.DownloadService"
+            android:process=":pushservice" />
+
+        <receiver
+            android:name="sdk.download.DownloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="sdk.download.DownloadProvider"
+            android:authorities="sdk.download.com.miicaa.home"
+            android:process=":pushservice" />
+        <!-- android:authorities="sdk.download.第三方包名" -->
+
+
+        <!-- GetuiExt模块配置 -->
+        <service
+            android:name="com.igexin.getuiext.service.GetuiExtService"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <receiver
+            android:name="com.igexin.getuiext.service.PayloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 -->
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />
+                <!-- android:name="com.igexin.sdk.action.第三方的appId" -->
+                <action android:name="com.igexin.sdk.action.3ikOowGIaD7E3t21UxSTm4" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="increment.download.com.miicaa.home"
+            android:exported="false"
+            android:process=":pushservice" />
+
+        <receiver
+            android:name="com.igexin.download.DownloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.SdkReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.coordinator.NotificationCenterAIDLReceiver" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.refreshls" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.miicaa.home.cast.TransmissionSever" >
+
+            <!-- 如下配置用于透传 -->
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.3ikOowGIaD7E3t21UxSTm4" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 请将MTA_APPKEY改为MTA分配的appkey < -->
+
+
+
+        　　
+        
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="AJI5L18WN3QN" />
+
+
+        <!-- 请将CHANNAL改为app的发布渠道 < -->
+
+
+        <meta-data
+            android:name="InstallChannel"
+            android:value="C_01" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c44932fb199ff50dea5d9776428dd859" />
+    </application>
+	<!-- c7d53d0cc4b89ff623c5050d395e7d9c 生产 -->
+	<!-- c44932fb199ff50dea5d9776428dd859 测试-->
+    　
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    　　
+    
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    　　
+    
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    　　
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+</manifest>

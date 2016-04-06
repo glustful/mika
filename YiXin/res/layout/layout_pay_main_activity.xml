@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nanlus="http://schemas.android.com/apk/res/com.miicaa.home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/headView"
+        layout="@layout/layout_pay_head_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/appBackground"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appBackground"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_pay_account_info" />
+
+            <TextView
+                android:id="@+id/pay_main_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appBackground"
+                android:padding="@dimen/payPadding"
+                android:text="当前使用状态（免费版）" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:paddingTop="@dimen/payPadding"
+                        android:paddingLeft="@dimen/payPadding"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/payPaddinghalf" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="@dimen/payPadding"
+                            android:textColor="@color/payGray"
+                            android:text="正在使用的产品：" />
+
+                        <TextView
+                            android:id="@+id/pay_main_kind"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/appBackground" 
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/line_right"
+                         android:paddingTop="@dimen/payPadding"
+                        android:paddingLeft="@dimen/payPadding"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                       >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="@dimen/payPadding"
+                             android:textColor="@color/payGray"
+                            android:text="使用期限：" />
+
+                        <TextView
+                            android:id="@+id/pay_main_timeout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                             android:textColor="@color/black"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/appBackground" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                       android:paddingBottom="@dimen/payPadding"
+                        android:paddingLeft="@dimen/payPadding"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingRight="@dimen/payPadding"
+                        android:paddingTop="@dimen/payPaddinghalf" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical"
+                            android:paddingBottom="@dimen/payPadding"
+                             android:textColor="@color/payGray"
+                            android:text="公司现有用户（人）：" 
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/pay_main_people_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             android:textColor="@color/black"
+                            android:gravity="center"
+                            android:text="0" />
+
+                        <com.yxst.epic.yixin.view.TextViewPartColor
+                            android:id="@+id/pay_main_people_addcount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="（还可新增0人）"
+                             android:textColor="@color/payGray"
+                            nanlus:colorEnd="6"
+                            nanlus:colorStart="5"
+                            nanlus:partTextColor="@color/paypRed" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/appBackground" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                       android:paddingBottom="@dimen/payPadding"
+                        android:paddingRight="@dimen/payPadding"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/payPadding"
+                        android:paddingTop="@dimen/payPaddinghalf" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/payPadding"
+                             android:textColor="@color/payGray"
+                            android:text="存储空间（GB）：" />
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/pay_main_store_used"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                             android:textColor="@color/black"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/pay_main_store_useable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                             android:textColor="@color/payGray"
+                            android:text="还可使用（0G）" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pay_other_bought"
+                style="@style/pay_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="其他已购买套餐" 
+                
+                android:drawableLeft="@drawable/pay_bought_package_icon"
+                android:drawablePadding="10dp"/>
+
+            <Button
+                android:id="@+id/pay_myfound"
+                style="@style/pay_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="我的资产" 
+                 android:drawableLeft="@drawable/pay_myfund_icon"
+                android:drawablePadding="10dp"/>
+
+            <Button
+                android:id="@+id/pay_bill"
+                style="@style/pay_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="订单记录" 
+                 android:drawableLeft="@drawable/pay_bill_icon"
+                android:drawablePadding="10dp"/>
+
+            <Button
+                android:id="@+id/pay_receipt"
+                style="@style/pay_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发票记录" 
+                 android:drawableLeft="@drawable/pay_receipt_icon"
+                android:drawablePadding="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/pay_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/pay_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账户充值" 
+            android:layout_marginRight="2dp"
+            android:background="@drawable/pay_color_selector"/>
+
+        <Button
+            android:id="@+id/pay_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/pay_color_selector"
+            android:text="购买套餐" />
+
+        <Button
+            android:id="@+id/pay_continue_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="继续购买"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/pay_color_selector"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/pay_plus_buy"
+            android:layout_width="0dp"
+            android:background="@drawable/pay_color_selector"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="加买5人包"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

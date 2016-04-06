@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/an_top_bg">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="61dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/assessment_new_type_activity_back_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/back_selector" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="选择审批类型"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/assessment_new_type_activity_normal_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@drawable/person_item_text_color"
+            android:textSize="14sp"
+            android:text="普通申请"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/right_next_selector"
+            android:background="@drawable/round_top_half_selector" />
+        <Button
+            android:id="@+id/assessment_new_type_activity_leave_button"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="@drawable/person_item_text_color"
+            android:textSize="14sp"
+            android:text="请假申请"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/right_next_selector"
+            android:background="@drawable/round_center_selector" />
+        <Button
+            android:id="@+id/assessment_new_type_activity_overtime_button"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="@drawable/person_item_text_color"
+            android:textSize="14sp"
+            android:text="加班申请"
+            android:gravity="left|center_vertical"
+            android:drawableRight="@drawable/right_next_selector"
+            android:background="@drawable/round_bottom_half_selector" />
+
+    </LinearLayout>
+    </LinearLayout>

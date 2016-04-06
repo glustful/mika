@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/appBackground"
+   >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:paddingBottom="5dp"
+        >
+
+        <RadioButton
+             android:id="@+id/small"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/pay_facevalue_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="￥100"
+            android:singleLine="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/paypRed" />
+
+        <RadioButton
+             android:id="@+id/middle"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/pay_facevalue_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="￥250"
+            android:singleLine="true"
+            android:textColor="@color/paypRed" />
+
+        <RadioButton
+             android:id="@+id/big"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/pay_facevalue_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="￥500"
+            android:singleLine="true"
+            android:textColor="@color/paypRed" />
+
+        <RadioButton
+             android:id="@+id/bigger"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+             android:background="@drawable/pay_facevalue_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="￥5000"
+            android:singleLine="true"
+            android:textColor="@color/paypRed" />
+
+        <RadioButton
+            android:id="@+id/other"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/pay_facevalue_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="￥100"
+            android:visibility="gone"
+            android:textColor="@color/paypRed" />
+    </RadioGroup>
+	<LinearLayout 
+	    android:id="@+id/edit"
+	    android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+         android:background="@drawable/pay_recharge_edit_bg"
+       
+        >
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:text="￥"
+	        android:gravity="center_vertical"
+	        android:textColor="@color/paypRed"/>
+	    <EditText 
+	        android:id="@+id/input"
+	        android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:minWidth="100dp"
+	        android:textSize="12sp"
+	        android:background="@android:color/transparent"
+	        android:inputType="numberDecimal"
+	        android:hint="输入其他金额"/>
+	</LinearLayout>
+</LinearLayout>

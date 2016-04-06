@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#E6E6E6"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+   
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_head_bg"
+        android:gravity="top" >
+         
+            <Button
+           
+                android:id="@+id/person_head_id_back"
+                style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_nobgd" />
+            
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="照片"
+            android:textSize="@dimen/framText"
+            android:textColor="#FFFFFF"/>
+ 
+        
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+                android:id="@+id/person_head_id_camera_layout"
+                 android:paddingLeft="@dimen/paddingleft"
+        	android:paddingRight="@dimen/paddingright"
+            android:background="@drawable/white_icon_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拍照"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/send_to_id_local_layout"
+                 android:paddingLeft="@dimen/paddingleft"
+        	android:paddingRight="@dimen/paddingright"
+            android:background="@drawable/white_icon_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="从手机相册选择"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|center_vertical"/>
+</LinearLayout>

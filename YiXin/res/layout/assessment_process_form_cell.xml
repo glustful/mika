@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_round_all_normal">
+
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/assessment_process_form_cell_head_image"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/an_user_head_large"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/assessment_process_form_cell_name_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="张三"
+                    android:textSize="16sp"
+                    android:textColor="#333333" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/assessment_process_form_cell_comment_textview"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="同意"
+                android:textSize="14sp"
+                android:textColor="#55a259" />
+            <TextView
+                android:id="@+id/assessment_process_form_cell_comment_content_textview"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="内容说明"
+                android:textSize="14sp"
+                android:textColor="#333333" />
+
+
+            <TextView
+                android:id="@+id/assessment_process_form_cell_time_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="2013-12-19 10:35"
+                android:textSize="12sp"
+                android:textColor="#999999" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

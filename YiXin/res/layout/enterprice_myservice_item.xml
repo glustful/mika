@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enterprice_style"
+   	android:layout_margin="20dp"
+    android:orientation="vertical" >
+
+   
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/framText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="" />
+
+       
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:padding="10dp">
+ 	<TextView 
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/framText"
+                android:textColor="#ff6600"
+                android:text=""/>
+           <LinearLayout 
+               android:layout_alignParentLeft="true"
+               android:layout_toLeftOf="@id/price"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+            <LinearLayout
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:orientation="horizontal"
+                 >
+
+                <TextView
+                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下单时期：" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black" />
+                
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:paddingTop="10dp"
+                android:orientation="horizontal"
+                 >
+
+                <TextView
+                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态：" />
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ff6600" />
+                
+            </LinearLayout>
+            </LinearLayout>
+           
+        </RelativeLayout>
+
+   
+
+</LinearLayout>

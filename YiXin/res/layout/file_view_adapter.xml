@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:background="@drawable/an_picture_bg"
+    >
+    <ImageView 
+        android:id="@+id/bitmap"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerInParent="true"
+        />
+    <ImageView 
+        android:id = "@+id/delBitmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/an_arrange_person_delete"/>
+    
+    
+
+</RelativeLayout>

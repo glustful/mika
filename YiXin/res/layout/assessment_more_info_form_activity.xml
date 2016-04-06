@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/an_top_bg"
+        android:layout_width="match_parent"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_height="48dp">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="62dp"
+            android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/assessment_more_info_form_activity_back_button"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:text="返回"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:layout_height="32dp"
+                android:background="@drawable/back_selector" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/an_round_all_normal">
+
+                <RelativeLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/assessment_more_info_form_activity_head_image"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/an_user_head_large"
+                        android:scaleType="fitCenter" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/assessment_more_info_form_activity_name_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="张三"
+                            android:textSize="16sp"
+                            android:textColor="#333333" />
+
+                        <ImageView
+                            android:id="@+id/assessment_more_info_form_activity_person_image"
+                            android:layout_toRightOf="@+id/assessment_more_info_form_activity_name_textview"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/an_weak_notify_bg"
+                            android:scaleType="fitCenter" />
+
+                        <TextView
+                            android:id="@+id/assessment_more_info_form_activity_person_count_textview"
+                            android:layout_toRightOf="@+id/assessment_more_info_form_activity_person_image"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5人"
+                            android:textSize="12sp"
+                            android:textColor="#999999" />
+
+                        <TextView
+                            android:id="@+id/assessment_more_info_form_activity_state_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="待审批"
+                            android:textSize="12sp"
+                            android:textColor="#999999" />
+
+                        <TextView
+                            android:id="@+id/assessment_more_info_form_activity_type_textview"
+                            android:layout_marginRight="40dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="事假"
+                            android:textSize="12sp"
+                            android:textColor="#999999" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/assessment_more_info_form_activity_momo_textview"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="这就是任务文字文字文字文字或者的标题这就是任务文字文字文字文字或者的标题"
+                        android:textSize="14sp"
+                        android:textColor="#333333" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/assessment_more_info_form_activity_update_time_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="2013-12-19 10:35"
+                            android:textSize="12sp"
+                            android:textColor="#999999" />
+
+                        <TextView
+                            android:id="@+id/assessment_more_info_form_activity_src_textview"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="来源：PC端 审批"
+                            android:textSize="12sp"
+                            android:textColor="#999999" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent">
+
+                    <Button
+                        android:id="@+id/assessment_more_info_form_activity_planTime_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="@drawable/person_item_text_color"
+                        android:textSize="14sp"
+                        android:text="我的计划"
+                        android:gravity="left|center_vertical"
+                        android:drawableRight="@drawable/right_next_selector"
+                        android:background="@drawable/round_top_half_selector" />
+
+                    <TextView
+                        android:id="@+id/assessment_more_info_form_activity_planTime_textview"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:gravity="left|center"
+                        android:text="2013-01-01" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent">
+
+                    <Button
+                        android:id="@+id/assessment_more_info_form_activity_reminder_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/person_item_text_color"
+                        android:textSize="14sp"
+                        android:text="提醒我"
+                        android:gravity="left|center_vertical"
+                        android:drawableRight="@drawable/right_next_selector"
+                        android:background="@drawable/round_bottom_half_selector" />
+
+                    <TextView
+                        android:id="@+id/assessment_more_info_form_activity_reminder_textview"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:gravity="left|center"
+                        android:text="2013-12-12 15：30" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent">
+
+                    <Button
+                        android:id="@+id/assessment_more_info_form_activity_assessment_copy_person_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColor="@drawable/person_item_text_color"
+                        android:textSize="14sp"
+                        android:text="办理人和抄送人"
+                        android:gravity="left|center_vertical"
+                        android:drawableRight="@drawable/right_next_selector"
+                        android:background="@drawable/round_top_half_selector" />
+
+                    <TextView
+                        android:id="@+id/assessment_more_info_form_activity_assessment_copy_person_textview"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:gravity="right|center"
+                        android:text="X人" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent">
+
+                    <Button
+                        android:id="@+id/assessment_more_info_form_activity_process_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/person_item_text_color"
+                        android:textSize="14sp"
+                        android:text="办理过程"
+                        android:gravity="left|center_vertical"
+                        android:drawableRight="@drawable/right_next_selector"
+                        android:background="@drawable/round_center_selector" />
+
+                    <TextView
+                        android:id="@+id/assessment_more_info_form_activity_process_textview"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:gravity="right|center"
+                        android:text="X条" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_height="40dp"
+                    android:layout_width="match_parent">
+
+                    <Button
+                        android:id="@+id/assessment_more_info_form_activity_file_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/person_item_text_color"
+                        android:textSize="14sp"
+                        android:text="所有附件"
+                        android:gravity="left|center_vertical"
+                        android:drawableRight="@drawable/right_next_selector"
+                        android:background="@drawable/round_bottom_half_selector" />
+
+                    <TextView
+                        android:id="@+id/assessment_more_info_form_activity_file_textview"
+                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="100dp"
+                        android:textSize="12sp"
+                        android:textColor="#999999"
+                        android:gravity="right|center"
+                        android:text="X个" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/assessment_more_info_form_activity_edit_layout"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/assessment_more_info_form_activity_edit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/person_item_text_color"
+                    android:textSize="14sp"
+                    android:text="编辑"
+                    android:gravity="left|center_vertical"
+                    android:drawableRight="@drawable/right_next_selector"
+                    android:background="@drawable/round_all_selector" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <Button
+                    android:id="@+id/assessment_more_info_form_activity_over_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:text="办结"
+                    android:gravity="center"
+                    android:background="@drawable/bottom_menu_cancel_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <Button
+                    android:id="@+id/assessment_more_info_form_activity_delete_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:text="删除"
+                    android:gravity="center"
+                    android:background="@drawable/bottom_menu_cancel_selector" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

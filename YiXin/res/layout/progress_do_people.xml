@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/progress_do_gridselect_color"
+    android:orientation="vertical" >
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <com.miicaa.base.RoundImage.CircularImage 
+        android:id="@+id/userhead"
+        android:src="@drawable/an_user_head_large"
+        style="@style/manual_userHead"/>
+    <TextView 
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/userhead"
+        android:textSize="@dimen/nameTextsize"
+        android:text="名字测试"
+        />
+    
+    <RatingBar 
+        android:id="@+id/gridStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/username"
+         android:numStars="5"
+        android:rating="3"
+        android:isIndicator="true"
+        android:layout_marginTop="2dp"
+        android:progressDrawable="@drawable/rating_yellow"
+        android:visibility="gone"
+       />
+
+
+</RelativeLayout>
+    </LinearLayout>

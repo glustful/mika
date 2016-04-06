@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#E6E6E6"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_head_bg"
+        android:gravity="top" >
+         
+            <Button
+           
+                android:id="@+id/person_base_id_back"
+                style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_nobgd" />
+            
+
+        <TextView 
+            android:id="@+id/person_base_id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textSize="@dimen/framText"
+            android:textColor="#FFFFFF"/>
+        
+           
+
+            <Button
+                android:id="@+id/person_base_id_commit"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/alittle_white"
+                android:background="#00000000"
+                android:layout_marginRight="5dp" />
+            
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+            android:id="@+id/person_base_id_edit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="40dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/paddingleft"
+        	android:paddingRight="@dimen/paddingright"
+            android:background="@drawable/white_icon_selector"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:maxLength="20"
+            android:textSize="14sp"
+        >
+        <requestFocus />
+
+    </EditText>
+        <TextView
+            android:id="@+id/person_base_id_err"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            style="?android:textAppearanceMedium"
+            android:visibility="gone"
+            android:background="#FF4343"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+
+           />
+    </RelativeLayout>
+</LinearLayout>

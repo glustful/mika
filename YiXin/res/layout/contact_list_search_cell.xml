@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#f0f0f0">
+
+        <ImageView
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/contact_list_search_input"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp" />
+        <ImageView
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/contact_list_search_ico"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"/>
+        <EditText
+            android:id="@+id/contact_list_search_cell_edit"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="40dp"
+            android:textSize="14sp"
+            android:hint="搜索"
+            android:background="@android:color/transparent"
+            />
+
+        <Button
+            android:id="@+id/contact_list_search_cell_button"
+            android:layout_height="20dp"
+            android:layout_width="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/contact_list_clear_button_selector"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="35dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

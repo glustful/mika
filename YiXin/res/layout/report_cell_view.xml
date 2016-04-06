@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:gravity="center_vertical"
+    
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+<LinearLayout 
+   
+    android:layout_marginTop="1dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+   android:background="@color/white"
+    
+    
+    >
+	<com.miicaa.base.RoundImage.CircularImage 
+	    android:layout_marginLeft="10dp"
+	    android:layout_width="10dp"
+	    android:layout_height="10dp"
+	    android:src="#ff9326"
+	    
+	    android:layout_gravity="center_vertical"/>
+	<FrameLayout 
+	     android:layout_weight="1"
+	    android:layout_gravity="center_vertical"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content">
+	<TextView
+	    android:id="@+id/title"
+	   android:background="@drawable/white_color_selector"
+	    android:textColor="@color/workrportblue"
+	    android:padding="10dp"
+	    
+	    android:layout_gravity="center_vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	   android:singleLine="true"
+	   android:ellipsize="end"
+	    android:text=""
+	    
+	    android:gravity="left|center_vertical"
+	    />
+	<!-- <EditText
+	    android:id="@+id/titleEdit"
+	   android:background="@drawable/white_color_selector"
+	     android:textColor="#000000"
+	    android:padding="10dp"
+	    
+	    android:layout_gravity="center_vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	   android:singleLine="true"
+	   android:maxLength="35"
+	    android:text=""
+	    
+	    android:gravity="left|center_vertical"
+	    /> -->
+	</FrameLayout>
+	<ImageButton 
+	   
+	    android:id="@+id/tip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@color/transparent"
+	    android:src="@drawable/report_tip"
+	    android:padding="10dp"/>
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/payPadding"
+     >
+
+    <TextView
+        android:id="@+id/pay_person_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="10dp"
+        android:text="*" 
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/pay_person_label_people"
+        android:layout_toRightOf="@id/pay_person_label"
+        android:layout_alignTop="@id/pay_person_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   		android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+        android:text="联系人：" 
+        android:gravity="right"
+        android:hint="手机或座机："
+       />
+    <TextView
+        android:id="@+id/pay_person_people"
+        android:layout_toRightOf="@id/pay_person_label_people"
+        android:layout_alignTop="@id/pay_person_label_people"
+       android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:background="@drawable/edit_bottom_dash"
+         android:text="翊日"/>
+	<TextView
+        android:id="@+id/pay_person_label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/pay_person_label"
+        android:paddingTop="10dp"
+        android:text="*" 
+        />
+	
+	<TextView 
+	    android:id="@+id/pay_person_label_phone"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@id/pay_person_label_people"
+	    android:layout_alignTop="@id/pay_person_label1"
+	    android:layout_below="@id/pay_person_label_people"
+	    android:gravity="right|center_vertical"
+	   
+	    android:text="手机或座机："/>
+	<EditText
+	    android:id="@+id/pay_person_phone"
+	     android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/pay_person_people"
+	    android:layout_below="@id/pay_person_people"
+	    android:layout_alignTop="@id/pay_person_label1"
+	    android:gravity="left|center_vertical"
+	    android:singleLine="true"
+        android:ellipsize="end"
+        android:hint="手机或座机"
+        android:phoneNumber="true"
+        android:background="@drawable/edit_bottom_dash"
+        android:inputType="phone"
+	    android:text=""/>
+   
+
+	
+	<TextView 
+	    android:id="@+id/pay_person_label_email"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@id/pay_person_label_phone"
+	    
+	    android:layout_below="@id/pay_person_label_phone"
+	    android:gravity="right|center_vertical"
+	   
+	    android:text="电子邮箱："/>
+	<EditText
+	    android:id="@+id/pay_person_email"
+	     android:paddingTop="10dp"
+	     android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/pay_person_phone"
+	    android:layout_below="@id/pay_person_phone"
+	    android:inputType="textEmailAddress"
+	    android:gravity="left"
+	    android:singleLine="true"
+        android:ellipsize="end"
+        android:background="@drawable/edit_bottom_dash"
+	    android:hint="email"/>
+	<TextView
+        android:id="@+id/pay_person_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+      	android:layout_toLeftOf="@id/pay_person_label_email"
+      	android:layout_alignTop="@id/pay_person_label_email"
+        android:layout_below="@id/pay_person_label1"
+        android:paddingTop="10dp"
+        android:gravity="right|bottom"
+        android:text="*" 
+        />
+</RelativeLayout>

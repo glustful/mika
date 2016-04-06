@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.top{
+	background-color: #ffffff;
+	display: block;
+	width: auto;
+	
+}
+.top p{
+	margin:10px;
+	text-align: center;
+	color: #0000FF;
+}
+
+.center{
+	text-align: center;
+	
+}
+.center div{
+	text-align: center;
+	margin: 20px;
+	padding:10px;
+	font-size: 30px;
+	border: 2px solid #000000;
+	
+	color: #000000;
+	display: block;
+}
+.center a{
+	
+	text-decoration: none
+}
+.bottom{
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}

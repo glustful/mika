@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_vertical"
+    android:paddingLeft="@dimen/spacing_horizontal_small"
+    android:paddingRight="@dimen/spacing_horizontal_small"
+    android:paddingTop="@dimen/spacing_vertical" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_item_time"
+        android:text="晚上20:53" />
+
+    <com.miicaa.base.RoundImage.CircularImage
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/head_size_small"
+        android:layout_height="@dimen/head_size_small"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_avatar" />
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_toLeftOf="@+id/ivIcon"
+        android:background="@drawable/chat_to_bg">
+
+        <ImageView
+            android:id="@+id/ivImg"
+            style="@style/chat_item_img_to_iv"/>
+
+        <LinearLayout
+            android:id="@+id/layoutProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ivImg"
+            android:layout_alignRight="@+id/ivImg"
+            android:layout_alignTop="@+id/ivImg"
+            android:layout_alignBottom="@+id/ivImg"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            android:background="#33000000">
+
+            <ProgressBar
+                android:id="@+id/pbUploadStatus"
+                android:layout_width="14sp"
+                android:layout_height="14sp"/>
+
+            <TextView
+                android:id="@+id/tvUploadPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layoutContent"
+        android:layout_alignTop="@+id/layoutContent"
+        android:layout_below="@+id/tv_time"
+        android:layout_toLeftOf="@+id/layoutContent"
+        android:paddingRight="@dimen/spacing_horizontal_small" 
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/ivStatusError"
+            android:layout_width="@dimen/iv_resend_size"
+            android:layout_height="@dimen/iv_resend_size"
+            android:src="@drawable/signup_error" />
+
+        <ProgressBar
+            android:id="@+id/pbSendingStatus"
+            android:layout_width="14sp"
+            android:layout_height="14sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

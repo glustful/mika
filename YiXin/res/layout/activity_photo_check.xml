@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/headView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/an_head_bg"
+        android:gravity="top" >
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+            <Button
+                android:id="@+id/big_picture_back_button"
+                style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000" />
+            
+        </RelativeLayout>
+
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="查看图片"
+            android:textSize="@dimen/plantext_size"
+            android:textColor="#FFFFFF"/>
+        
+
+            <Button
+                 android:id="@+id/save_big_picture"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@drawable/commit_button_selector"
+                android:background="@android:color/transparent"
+                android:visibility="gone" />
+            
+        
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    <com.miicaa.home.ui.picture.MyPhotoViewPager
+        android:id="@+id/photo_check_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.miicaa.home.ui.photoGrid.PictureSelectView_
+        android:id="@+id/selectView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:visibility="gone"/>
+    </RelativeLayout>
+    
+    <com.miicaa.utils.fileselect.BrowseFileFootView_
+        android:id="@+id/footView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    </LinearLayout>
+

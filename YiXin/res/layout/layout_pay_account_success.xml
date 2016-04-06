@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:animateLayoutChanges="true">
+
+    <include
+        
+        layout="@layout/layout_pay_head_view" />
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/head_img"
+        android:background="@drawable/account_recharge_success"/>
+   <LinearLayout 
+       android:id="@+id/recharge_success_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="@dimen/payPadding"
+       android:visibility="gone">
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="充值金额："
+           android:textSize="@dimen/framText"/>
+       <TextView 
+           android:id="@+id/recharge_money"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textColor="#ff0000"
+           android:gravity="right"
+           android:textSize="@dimen/framText"
+           android:layout_weight="1"/>
+   </LinearLayout>
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="@dimen/payPadding">
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="你可能要："
+           android:textSize="@dimen/framText"/>
+       <TextView 
+           android:id="@+id/recharge_buy"
+           android:clickable="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="购买套餐 "
+           android:textSize="15dp"
+           android:textColor="#87b4d7"
+           
+           />
+        <TextView 
+            android:id="@+id/recharge_myfund"
+            android:layout_marginLeft="@dimen/payPaddinghalf"
+            android:clickable="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="查看我的资产 "
+           android:textSize="15dp"
+           android:textColor="#87b4d7"
+           
+           />
+        <TextView 
+            android:id="@+id/recharge_bill"
+            android:layout_marginLeft="@dimen/payPaddinghalf"
+            android:clickable="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="查看订单记录 "
+           android:textSize="15dp"
+           android:textColor="#87b4d7"
+           
+           />
+   </LinearLayout>
+</LinearLayout>

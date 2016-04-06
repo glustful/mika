@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 检查单位item布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_color_selector"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="2dp"
+    android:paddingTop="5dp" >
+	<View 
+	    android:layout_height="fill_parent"
+	    android:layout_width="30dp"
+	    android:id="@+id/person_depart_space"
+	    android:visibility="gone"/>
+    <CheckBox
+        android:id="@+id/person_depart_cbCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:button="@drawable/select_kuang_selector"
+        android:focusable="false"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/person_depart_tvTitle"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        
+        android:layout_weight="1"
+        android:clickable="false"
+        android:drawableRight="@drawable/an_text_right_next"
+        
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="8dp"
+        android:textColor="#626466"
+        android:textSize="20sp" />
+
+</LinearLayout>

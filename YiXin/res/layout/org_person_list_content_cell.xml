@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/org_person_list_content_cell_button"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/person_item_selector" />
+        <ImageView
+            android:id="@+id/org_person_list_content_cell_left_image"
+            android:layout_width="17dp"
+            android:layout_height="18dp"
+            android:contentDescription="选中图标"
+            android:src="@drawable/org_person_no_select"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp" />
+
+        <ImageView
+            android:id="@+id/org_person_list_content_cell_left_head_image"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="头像图标"
+            android:layout_toRightOf="@+id/org_person_list_content_cell_left_image"
+            android:src="@drawable/an_user_small_head_img"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/org_person_list_content_cell_content_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="head内容"
+            android:layout_marginLeft="10dp"
+            android:text="产品部"
+            android:textColor="#333333"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/org_person_list_content_cell_left_head_image" />
+
+        <ImageView
+            android:id="@+id/org_person_list_content_cell_right_image"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="箭头"
+            android:src="@drawable/an_right_next"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+
+        <Button
+            android:id="@+id/org_person_list_content_cell_select_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/org_person_list_content_cell_left_image"
+            android:layout_alignRight="@+id/org_person_list_content_cell_content_textview"
+            android:background="@android:color/transparent"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d9d9d9" />
+</LinearLayout>

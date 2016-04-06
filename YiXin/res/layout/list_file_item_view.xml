@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:orientation="horizontal" 
+    android:background="@drawable/white_color_selector">
+    <CheckBox 
+        android:id="@+id/checkBox"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:button="@drawable/select_kuang_selector"/>
+    <ImageView 
+        android:id="@+id/iamge"
+        android:layout_marginLeft="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView 
+        android:id="@+id/name"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:text="1"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        
+        />
+    <TextView
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+         android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:text="2"
+        />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/layout"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/payPadding"
+            android:paddingTop="@dimen/payPaddinghalf"
+            android:gravity="right" 
+            android:layout_weight="1"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/time"
+                android:textSize="@dimen/middlesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="" 
+                android:textColor="@color/payGray"/>
+
+            <TextView
+                android:id="@+id/creator"
+                android:textSize="@dimen/middlesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" 
+                android:textColor="@color/payGray"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

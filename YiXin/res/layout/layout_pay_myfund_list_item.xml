@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="10dp" >
+
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       
+       android:padding="@dimen/payPadding">
+       <ImageView
+           android:id="@+id/myfund_item_head" 
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/an_user_head_large"/>
+      
+        <LinearLayout 
+            android:id="@+id/myfund_item_right"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+            android:layout_alignTop="@id/myfund_item_head"
+           android:layout_alignBottom="@id/myfund_item_head"
+           android:layout_alignParentRight="true"
+           android:gravity="right">
+           <TextView 
+               android:id="@+id/myfund_item_money"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:paddingRight="10dp"
+               android:layout_weight="1"
+               android:gravity="right"/>
+           <TextView 
+               android:paddingTop="10dp"
+               android:id="@+id/myfund_item_state"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+              
+              android:layout_weight="1"
+               android:gravity="right|bottom"/>
+       </LinearLayout>
+        <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_toLeftOf="@id/myfund_item_right"
+           android:layout_toRightOf="@id/myfund_item_head"
+           android:layout_alignTop="@id/myfund_item_head"
+           android:layout_alignBottom="@id/myfund_item_head"
+           android:paddingLeft="@dimen/payPadding">
+           <TextView 
+               android:id="@+id/myfund_item_title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:singleLine="true"
+               android:ellipsize="end"
+               android:text=""/>
+           <TextView 
+               android:paddingTop="10dp"
+               android:id="@+id/myfund_item_date"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textColor="@color/payGray"
+               android:gravity="bottom"
+               android:text=""/>
+       </LinearLayout>
+   </RelativeLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="#f3f3f3">
+       <View 
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:visibility="gone"
+           android:background="@drawable/dashed_line"/>
+       <LinearLayout 
+           android:id="@+id/bottom_layout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right"
+           android:background="#f3f3f3"
+           android:paddingRight="@dimen/payPadding"
+           android:paddingTop="5dp">
+           <Button 
+               android:id="@+id/pay_myfund_cancel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="取消充值"
+               
+               android:textColor="@color/paytext"
+             	android:background="@color/transparent"
+              
+               />
+           <Button 
+               android:id="@+id/pay_myfund_submit"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="充值"
+               android:background="@color/transparent"
+              android:textColor="@color/paytext"
+              
+               />
+            
+       </LinearLayout>
+   </LinearLayout>
+
+</LinearLayout>

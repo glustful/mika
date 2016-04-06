@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+        android:id="@+id/headView"
+        layout="@layout/layout_head_view"/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    
+ <ImageView 
+        android:id="@+id/line"
+        android:layout_width="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="3dp"
+        android:layout_centerHorizontal="true"
+       
+        android:background="@drawable/horizontal_line"
+        />
+
+        <Button
+            android:layout_toLeftOf="@id/line"
+            android:id="@+id/beginTime"
+            android:layout_width="wrap_content"
+            android:minWidth="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="2014-12-11 20:18"
+            android:background="@color/alittle_white"
+            android:textSize="15sp"
+            android:layout_marginLeft="5dp"
+            />
+   
+     <Button
+         android:layout_alignParentRight="true"
+            android:id="@+id/endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:minWidth="150dp"
+            android:layout_gravity="center"
+            android:text="2014-12-11 20:18"
+            android:background="@color/alittle_white"
+            android:textSize="15sp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/line"
+            />
+    
+    <Button 
+        android:id="@+id/clearTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style ="?android:attr/buttonStyleSmall"
+        android:background="@color/transparent"
+        android:text="清空计划执行日期"
+        android:textSize="15sp"
+        android:layout_below="@+id/endTime"
+        android:layout_alignRight="@+id/endTime"
+        android:textColor="@color/blue"/>
+    
+    </RelativeLayout>
+    
+    </RelativeLayout>
+    
+    
+    
+    
+</LinearLayout>

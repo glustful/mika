@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_vertical"
+    android:paddingLeft="@dimen/spacing_horizontal_small"
+    android:paddingRight="@dimen/spacing_horizontal_small"
+    android:paddingTop="@dimen/spacing_vertical" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_item_time"
+        android:text="晚上20:53"/>
+
+    <com.miicaa.base.RoundImage.CircularImage
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/head_size_small"
+        android:layout_height="@dimen/head_size_small"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/an_user_head_large" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_alignTop="@+id/iv_icon"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="@dimen/spacing_horizontal_small"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="tvName"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_marginRight="80dp"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:background="@drawable/chat_from_bg"
+        android:minHeight="@dimen/icon_size_normal"
+        android:minWidth="50dp"
+        android:text="tv_content"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/layout_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv_content"
+        android:layout_marginLeft="-80dp"
+        android:layout_toRightOf="@+id/tv_content"
+        android:paddingLeft="@dimen/spacing_horizontal_small" >
+    </RelativeLayout>
+
+</RelativeLayout>

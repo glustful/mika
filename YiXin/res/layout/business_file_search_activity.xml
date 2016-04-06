@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/business_file_main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:id="@+id/business_file_main_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+   
+	
+   <LinearLayout 
+        android:id="@+id/business_file_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        
+        >
+    <RelativeLayout 
+        android:id="@+id/business_file_searchKuang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        
+        >
+        
+    </RelativeLayout>
+    
+    </LinearLayout>
+	
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/business_file_search_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+	<TextView 
+	   android:id="@+id/business_file_search_list_view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="抱歉，找不到符合条件的文件，请换个搜索条件试试吧！"
+        android:padding="20dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>
+</FrameLayout>

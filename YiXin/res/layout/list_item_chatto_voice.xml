@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_vertical"
+    android:paddingLeft="@dimen/spacing_horizontal_small"
+    android:paddingRight="@dimen/spacing_horizontal_small"
+    android:paddingTop="@dimen/spacing_vertical" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_item_time"
+        android:text="晚上20:53" />
+
+    <com.miicaa.base.RoundImage.CircularImage
+        android:id="@+id/ivIcon"
+        android:layout_width="@dimen/head_size_small"
+        android:layout_height="@dimen/head_size_small"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="6dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="80dp"
+        android:layout_toLeftOf="@+id/ivIcon"
+        android:background="@drawable/chat_to_bg"
+        android:gravity="right|center_vertical"
+        android:minHeight="@dimen/icon_size_normal"
+        android:minWidth="120dp"
+        android:orientation="horizontal" >
+        <ImageView 
+            android:id="@+id/ivVoice"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/chatto_voice_playing"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layoutContent"
+        android:layout_alignTop="@+id/layoutContent"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginRight="-80dp"
+        android:layout_toLeftOf="@+id/layoutContent"
+        android:paddingRight="@dimen/spacing_horizontal_small" 
+        android:gravity="center_vertical">
+
+        
+        <ProgressBar
+            android:id="@+id/statusSending"
+            android:layout_width="@dimen/spacing_horizontal"
+            android:layout_height="@dimen/spacing_horizontal"/>
+
+        <ImageView
+            android:id="@+id/ivStatusError"
+            android:layout_width="@dimen/iv_resend_size"
+            android:layout_height="@dimen/iv_resend_size"
+            android:src="@drawable/signup_error" />
+
+        <TextView
+            android:id="@+id/tvVoiceLenght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5&quot;"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold" />
+</LinearLayout>
+
+</RelativeLayout>

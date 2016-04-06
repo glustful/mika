@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#E6E6E6"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    
+    <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/an_head_bg">
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <Button 
+                android:id="@+id/person_home_id_back"
+               style="@style/back_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"/>
+        </RelativeLayout>
+        <TextView 
+             android:id="@+id/person_home_id_user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+        
+    </RelativeLayout>
+    <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="180dp"
+          android:background="@drawable/an_me_bg" >
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            >
+                        
+            <com.miicaa.base.RoundImage.CircularImage 
+                android:id="@+id/headImageView"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:src="@drawable/an_user_head_large"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="4dp"
+                />
+            
+
+            <TextView 
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+             
+                />
+            </LinearLayout>
+       
+          
+      </RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <Button
+                android:id="@+id/person_home_id_dynamic"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@drawable/person_item_text_color"
+                android:textSize="@dimen/discoverchild"
+                android:text="个人动态"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/right_next_selector"
+                android:drawableLeft="@drawable/an_person_dynamic_icon"
+                android:background="@drawable/white_icon_selector"
+                android:paddingLeft="@dimen/paddingleft"
+                android:paddingRight="@dimen/paddingright"/>
+
+        <Button
+                android:id="@+id/person_home_id_work"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@drawable/person_item_text_color"
+                android:textSize="@dimen/discoverchild"
+                android:text="工作成效"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/right_next_selector"
+                android:drawableLeft="@drawable/an_person_effect_icon"
+                android:background="@drawable/white_icon_selector"
+                android:paddingLeft="@dimen/paddingleft"
+                android:paddingRight="@dimen/paddingright"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/person_home_id_other_layout"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+	 <Button
+                android:id="@+id/personHomeTalk"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@drawable/person_item_text_color"
+                android:textSize="@dimen/discoverchild"
+                android:text="发侎聊"
+                android:gravity="left|center_vertical"
+                android:drawableRight="@drawable/right_next_selector"
+                android:drawableLeft="@drawable/talk_to"
+                android:background="@drawable/white_icon_selector"
+                android:paddingLeft="@dimen/paddingleft"
+                android:paddingRight="@dimen/paddingright"
+                android:drawablePadding="5dp"
+                android:visibility="visible"/>
+        <Button
+                android:id="@+id/person_home_id_call_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@drawable/person_item_text_color"
+                android:textSize="@dimen/discoverchild"
+                android:text="拨电话"
+                android:gravity="left|center_vertical"
+                android:drawableLeft="@drawable/an_call_phone_icon"
+                android:background="@drawable/white_icon_selector"
+                android:paddingLeft="@dimen/paddingleft"
+                android:drawablePadding="5dp"
+                android:paddingRight="@dimen/paddingright"/>
+
+        <Button
+                android:id="@+id/frame_me_id_send_msg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@drawable/person_item_text_color"
+                android:textSize="@dimen/discoverchild"
+                android:text="发短信"
+                android:gravity="left|center_vertical"
+                android:drawableLeft="@drawable/an_send_to_icon"
+                android:drawablePadding="5dp"
+                android:background="@drawable/white_icon_selector"
+                android:paddingLeft="@dimen/paddingleft"
+                android:paddingRight="@dimen/paddingright"/>
+
+        <Button
+                android:id="@+id/frame_me_id_send_email"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@drawable/person_item_text_color"
+                android:textSize="@dimen/discoverchild"
+                android:text="发邮件"
+                android:gravity="left|center_vertical"
+               
+                android:drawableLeft="@drawable/an_email_icon"
+                android:background="@drawable/white_icon_selector"
+                android:paddingLeft="@dimen/paddingleft"
+                android:paddingRight="@dimen/paddingright"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

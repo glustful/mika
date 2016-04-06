@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:miicaa="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout 
+       android:background="@color/white"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+       android:padding="10dp">
+       <com.yxst.epic.yixin.view.TextViewPartColor 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="联系人名称"
+           miicaa:partTextColor="@color/red"
+           miicaa:colorStart="0"
+           android:textSize="@dimen/framText"
+           miicaa:colorEnd="0"/>
+       <TextView 
+           android:id="@+id/name"
+           android:paddingLeft="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/white"/>
+   </LinearLayout>
+    <com.miicaa.home.view.LabelEditView_
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        miicaa:gravity="LEFT"
+        miicaa:hint=""
+        miicaa:enable="false"
+        miicaa:label="联系人电话" />
+
+    <com.miicaa.home.view.LabelEditView_
+        android:id="@+id/email"
+        miicaa:enable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        miicaa:gravity="LEFT"
+        miicaa:hint=""
+        miicaa:label="联系人邮箱" />
+
+    <com.miicaa.home.view.LabelEditView_
+        android:id="@+id/qq"
+        miicaa:enable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        miicaa:gravity="LEFT"
+        miicaa:hint=""
+        miicaa:label="联系人QQ" />
+
+    <com.miicaa.home.view.LabelEditView_
+        android:id="@+id/industry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        miicaa:gravity="LEFT"
+        miicaa:hint=""
+        miicaa:enable="false"
+        miicaa:label="联系人职务" />
+
+</LinearLayout>

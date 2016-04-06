@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_list_serch_layout"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/appBackground" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/contact_list_search_input" />
+
+    <ImageView
+        android:id="@+id/serachIco"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+         android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/contact_list_search_ico" />
+
+    <EditText
+        android:id="@+id/contact_list_search_cell_edit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/serachIco"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#00000000"
+        android:hint="查找标签"
+        android:overScrollMode="always"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/contact_list_search_cell_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        
+        android:background="@drawable/contact_list_clear_button_selector"
+        android:visibility="gone" />
+
+</RelativeLayout>

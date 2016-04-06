@@ -1,0 +1,115 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+		<item name="android:windowBackground">@color/windowBackground</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AppTheme.NoTitleBar.Fullscreen" parent="AppTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Theme.Translucent" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/back_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/back_right_out</item>
+    </style>
+    
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+    
+    <style name="divider_vertical">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+    
+    <style name="divider_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_bar_h</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="contact_detail_table_key">
+        <item name="android:layout_height">@dimen/item_h</item>
+        <item name="android:layout_marginLeft">@dimen/spacing_horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/spacing_horizontal</item>
+        <item name="android:paddingRight">@dimen/spacing_horizontal</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="contact_detail_table_value">
+        <item name="android:layout_height">@dimen/item_h</item>
+        <item name="android:layout_marginRight">@dimen/spacing_horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/spacing_horizontal</item>
+        <item name="android:paddingRight">@dimen/spacing_horizontal</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
+
+    <style name="me_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_h</item>
+        <item name="android:layout_marginTop">@dimen/divider_bar_h</item>
+        <item name="android:background">@drawable/list_selector</item>
+        <item name="android:drawablePadding">@dimen/spacing_horizontal</item>
+        <item name="android:padding">@dimen/spacing_horizontal_small</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="chat_item_time">
+        <item name="android:background">@drawable/mm_text_bg_trans</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_vertical</item>
+        <item name="android:layout_marginTop">@dimen/spacing_vertical</item>
+    </style>
+    
+    <style name="chat_item_img_from_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxHeight">@dimen/chat_item_img_from_iv_maxSize</item>
+        <item name="android:maxWidth">@dimen/chat_item_img_from_iv_maxSize</item>
+        <!-- fitCenter -->
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    
+    <style name="chat_item_img_to_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:maxHeight">@dimen/chat_item_img_to_iv_maxSize</item>
+        <item name="android:maxWidth">@dimen/chat_item_img_to_iv_maxSize</item>
+        <!-- fitCenter -->
+        <item name="android:scaleType">fitXY</item>
+    </style>
+</resources>

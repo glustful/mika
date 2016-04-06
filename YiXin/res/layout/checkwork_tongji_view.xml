@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="60sp"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/check_later"
+        android:drawableRight="@drawable/checkwork_vitcal_line"/>
+
+    <TextView
+        android:id="@+id/bottomTextView"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/mainTextView"
+        android:layout_alignRight="@+id/mainTextView"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/check_later_ico"
+        android:text="迟到"
+        android:textColor="@color/checkwork_tongji_bottom_color"
+        android:textSize="15sp"
+        android:gravity="left|center_vertical" />
+
+</RelativeLayout>

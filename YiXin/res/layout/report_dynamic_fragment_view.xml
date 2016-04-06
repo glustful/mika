@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:clickable="true"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+	
+	<Button 
+	    android:clickable="false"
+	    android:layout_marginBottom="1dp"
+	    android:padding="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:drawableLeft="@drawable/addfriend_icon_official"
+	    android:text="动态"
+	    android:background="@drawable/white_color_selector"
+	    android:gravity="left|center_vertical"
+	    android:drawableRight="@drawable/addfriend_icon_qucikgroup"/>
+
+</LinearLayout>

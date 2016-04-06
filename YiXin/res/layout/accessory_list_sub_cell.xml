@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/accessory_list_sub_cell_image_layout"
+            android:layout_height="60dp"
+            android:layout_width="60dp">
+
+            <ImageView
+                android:id="@+id/accessory_list_sub_cell_image_button"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/an_arrange_photo_icon"/>
+
+            <TextView
+                android:id="@+id/accessory_list_sub_cell_image_textview"
+                android:layout_height="30dp"
+                android:layout_width="50dp"
+                android:text="10"
+                android:layout_centerInParent="true"
+                android:layout_alignBottom="@+id/accessory_list_sub_cell_image_button"
+                 android:layout_alignLeft="@+id/accessory_list_sub_cell_image_button"
+                  android:layout_alignRight="@+id/accessory_list_sub_cell_image_button"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bar1"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/accessory_list_sub_cell_file_layout"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:id="@+id/accessory_list_sub_cell_file_button"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/an_arrange_file_icon"/>
+
+            <TextView
+                android:id="@+id/accessory_list_sub_cell_file_textview"
+                android:layout_height="30dp"
+                android:layout_width="50dp"
+                android:text="1个"
+                android:layout_alignBottom="@+id/accessory_list_sub_cell_file_button"
+                android:layout_alignLeft="@+id/accessory_list_sub_cell_file_button"
+                android:layout_alignRight="@+id/accessory_list_sub_cell_file_button"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="0dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bar1"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/accessory_list_sub_cell_time_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="2013-12-19 10:35"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#999999" />
+
+    <ImageView
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#eeeeee"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+</LinearLayout>

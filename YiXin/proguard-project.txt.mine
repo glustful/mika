@@ -1,0 +1,217 @@
+-dontpreverify
+-flattenpackagehierarchy
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+#不知道干嘛的
+-dontoptimize
+-keepattributes *Annotation*
+-keep public class com.google.vending.licensing.ILicensingService
+-keepattributes Signature
+-keep class sun.misc.Unsafe { *; }
+
+#混淆算法
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keep class * extends java.lang.annotation.Annotation { *; }
+
+-libraryjars libs/alipaysdk.jar
+-libraryjars libs/alipaysecsdk.jar
+-libraryjars libs/alipayutdid.jar
+-libraryjars libs/Android_2DMap_V2.4.0.jar
+-libraryjars libs/Android_Location_V1.3.0.jar
+-libraryjars libs/android-viewbadger.jar
+-libraryjars libs/androidannotations-api-3.0.1.jar
+-libraryjars libs/apache-mime4j-0.6.jar
+#-libraryjars libs/asmack-android-16-beem.jar
+-libraryjars libs/GetuiExt-1.2.0.jar
+-libraryjars libs/GetuiSdk-1.5.0.0.jar
+-libraryjars libs/greendao-1.3.0-beta-1.jar
+-libraryjars libs/httpmime-4.0.1.jar
+-libraryjars libs/jackson-annotations-2.4.0.jar
+-libraryjars libs/jackson-core-2.4.2.jar
+-libraryjars libs/jackson-databind-2.4.2.jar
+-libraryjars libs/jsoup-1.7.3.jar
+-libraryjars libs/libammsdk.jar
+-libraryjars libs/pinyin4j-2.5.0.jar
+#-libraryjars libs/spring-android-core-1.0.1.RELEASE.jar
+#-libraryjars libs/spring-android-rest-template-1.0.1.RELEASE.jar
+-libraryjars libs/avoscloud-sdk-v3.1.5.jar
+-libraryjars libs/avoscloud-statistics-v3.1.5.jar
+-libraryjars libs/fastjson.jar
+-libraryjars compile-libs/androidannotations-3.0.1.jar
+-libraryjars ..\\android-support-v7-appcompat
+-libraryjars ..\\AndroidHorizontalListView
+#-libraryjars ..\\zxing-lib
+-libraryjars ..\\HTML5WebView
+-libraryjars ..\\imageloderLibrary
+-libraryjars ..\\menudrawer
+-libraryjars ..\\PinnedHeaderListView-library
+-libraryjars ..\\RoundedImageView-library
+-libraryjars ..\\ViewPagerIndicator-library
+-libraryjars ..\\YiXin-Data-library
+-libraryjars ..\\YiXin-Push-library
+-libraryjars ..\\library
+-libraryjars ..\\x_utils-library
+-libraryjars ..\\library_photoView\\src\\main
+
+-dontwarn android.support.v4.**  
+-dontwarn org.apache.commons.net.** 
+
+-keep class com.alipay.android.app.IAlixPay{*;}
+-keep class com.alipay.android.app.IAlixPay$Stub{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback{*;}
+-keep class com.alipay.android.app.IRemoteServiceCallback$Stub{*;}
+-keep class com.alipay.sdk.app.PayTask{ public *;}
+-keep class com.alipay.sdk.auth.AlipaySDK{ public *;}
+-keep class com.alipay.sdk.auth.APAuthInfo{ public *;}
+-keep class com.alipay.mobilesecuritysdk.**
+-keep class com.com.yxst.epic.yixin.service.MsgWriter
+-keep class com.miicaa.home.data.business.org.EntirpiseInfo{*;}
+-dontwarn  com.miicaa.home.data.business.org.EntirpiseInfo
+-keep class com.yxst.epic.yixin.db.Message
+#使用到了反射机制的类
+-keep class com.miicaa.home.ui.org.DateTimePopup{*;}
+-keep class com.ut.**{*;}
+-dontwarn  com.ut.**
+-keep public class * extends android.app.Fragment
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.support.v4.**
+-keep public class com.android.vending.licensing.ILicensingService
+-keep class org.androidannotations.annotations.**{*;}
+-dontwarn org.androidannotations.annotations.**
+-keep class android.support.v7.**{*;}
+-dontwarn android.support.v7.**
+-keep class com.meetme.android.horizontallistview.**{*;}
+-dontwarn com.meetme.android.horizontallistview.**
+#-keep class com.google.zxing.**{*;}
+#-dontwarn com.google.zxing.**
+-keep class com.nostra13.universalimageloader.**{*;}
+-dontwarn com.nostra13.universalimageloader.**
+-keep class org.itri.html5webview.**{*;}
+-dontwarn org.itri.html5webview.**
+-keep class com.handmark.pulltorefresh.library.**{*;}
+-dontwarn com.handmark.pulltorefresh.library.**
+-keep class net.simonvt.menudrawer.**{*;}
+-dontwarn net.simonvt.menudrawer.**
+-keep class za.co.immedia.pinnedheaderlistview.**{*;}
+-dontwarn za.co.immedia.pinnedheaderlistview.**
+-keep class com.makeramen.**{*;}
+-dontwarn com.makeramen.**
+-keep class uk.co.senab.photoview.**{*;}
+-dontwarn uk.co.senab.photoview.**
+-keep class com.viewpagerindicator.**{*;}
+-dontwarn com.viewpagerindicator.**
+-keep class com.yxst.epic.yixin.push.**{*;}
+-dontwarn com.yxst.epic.yixin.push.**
+-keep class com.yxst.epic.yixin.data.**{*;}
+-dontwarn com.yxst.epic.yixin.data.**
+-dontnote com.android.vending.licensing.ILicensingService
+-keepnames class * implements java.io.Serializable
+
+-dontwarn org.springframework.**
+-dontwarn sdk.**
+-dontwarn com.igexin.**
+-dontwarn org.apache.http.entity.mime.**
+-keep class * extends de.greenrobot.dao.**{*;}
+-dontwarn de.greenrobot.dao.**
+-dontwarn com.tencent.stat.**
+-keep class com.tencent.stat.**{*;}
+-keep class com.yxst.epic.yixin.db.**{*;}
+-dontwarn com.tencent.stat**
+-keep class com.lidroid.xutils.**{*;}
+-dontwarn com.lidroid.xutils.**
+-keep class org.apache.james.mime4j.*{*;}
+-dontwarn org.apache.james.mime4j.**
+-keep class com.fasterxml.jackson.annotation.**{*;}
+-dontwarn com.fasterxml.jackson.annotation.**
+-keep class com.tencent.mm.**{*;}
+-dontwarn com.tencent.mm.**
+-keep class org.jsoup.**{*;}
+-dontwarn org.jsoup.**
+-keep class com.fasterxml.jackson.core.**{*;}
+-dontwarn com.fasterxml.jackson.core.**
+-keep class com.kenai.jbosh.**{*;}
+-dontwarn com.kenai.jbosh.**
+-keep class com.novell.sasl.client.**{*;}
+-dontwarn com.novell.sasl.client.**
+-keep class de.measite.smack.**{*;}
+-dontwarn de.measite.smack.**
+-keep class android.support.v4.**{*;}
+-dontwarn android.support.v4.**
+-keep class demo.*.**{*;}
+-dontwarn demo.**
+-keep class android.support.v7.app.**{*;}
+-dontwarn android.support.v7.app.**
+-keep class com.aps.**{*;}
+-dontwarn com.aps.**
+-keep class com.fasterxml.jackson.databind.**{*;}
+-dontwarn com.fasterxml.jackson.databind.**
+-keep class com.squareup.picasso.**{*;}
+-dontwarn com.squareup.picasso.**
+-keep class org.apache.james.mime4j.**{*;}
+-dontwarn org.apache.james.mime4j.**
+-keep class org.apache.http.entity.mime.**{*;}
+-dontwarn org.apache.http.entity.mime.**
+-keep class org.springframework.**{*;}
+-dontwarn org.springframework.**
+-keep class com.avos.**{*;}
+-dontwarn com.avos.**
+-keep class com.avos.avoscloud.**{*;}
+-dontwarn com.avos.avoscloud.**
+-keep class com.alibaba.fastjson.**{*;}
+-dontwarn com.alibaba.fastjson.**
+
+
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+
+#高德地图的混淆
+# As described in tools/proguard/examples/android.pro - ignore all warnings.
+#-dontwarn android.support.v4.**
+#如果有其它包有warning，在报出warning的包加入下面类似的-dontwarn 报名
+-dontwarn com.amap.api.**
+-dontwarn com.aps.**
+#高德相关混淆文件
+#3D 地图
+-keep   class com.amap.api.maps.**{*;} 
+-keep   class com.autonavi.amap.mapcore.*{*;} 
+#Location
+-keep   class com.amap.api.location.**{*;} 
+-keep   class com.aps.**{*;} 
+#Service
+-keep   class com.amap.api.services.**{*;} 
+#2D地图
+-keep class com.amap.api.maps2d.**{*;}
+-keep class com.amap.api.mapcore2d.**{*;}

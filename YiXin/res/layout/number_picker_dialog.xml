@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+      
+        <com.miicaa.common.base.numberPicker.NumberPicker
+            android:id="@+id/number_picker_dialog_numberPicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/NPWidget.Holo.Light.NumberPicker" >
+            </com.miicaa.common.base.numberPicker.NumberPicker>
+           
+
+        <Button
+            android:id="@+id/number_picker_dialog_com_button"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:text="完成" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_vertical"
+    android:paddingLeft="@dimen/spacing_horizontal_small"
+    android:paddingRight="@dimen/spacing_horizontal_small"
+    android:paddingTop="@dimen/spacing_vertical" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/chat_item_time"
+        android:text="晚上20:53" />
+
+    <com.miicaa.base.RoundImage.CircularImage
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/head_size_small"
+        android:layout_height="@dimen/head_size_small"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginRight="6dp"
+        android:scaleType="center"
+        android:src="@drawable/default_avatar" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_icon"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="@dimen/spacing_horizontal_small"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:text="tv_name"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:background="@drawable/chat_from_bg" >
+
+        <ImageView
+            android:id="@+id/ivImg"
+            style="@style/chat_item_img_from_iv"/>
+        
+        <LinearLayout
+            android:id="@+id/layoutProgress"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ivImg"
+            android:layout_alignRight="@+id/ivImg"
+            android:layout_alignTop="@+id/ivImg"
+            android:layout_alignBottom="@+id/ivImg"
+            android:gravity="center"
+            android:background="#33000000"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/pbSendingStatus"
+                android:layout_width="14sp"
+                android:layout_height="14sp"/>
+
+            <TextView
+                android:id="@+id/tvSendingPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

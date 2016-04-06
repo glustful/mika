@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/alittle_white"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/oneRowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="3dp"
+        >
+    <com.miicaa.home.ui.menu.NoScrollGridView
+        android:id="@+id/oneRowGrid"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:horizontalSpacing="10dp"
+        android:layout_weight="1"
+        />
+    <ImageButton 
+        android:id="@+id/oneRowBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/down_jiao"
+        android:background="@color/transparent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0"/>
+    </LinearLayout>
+    
+  
+
+</RelativeLayout>
